@@ -1,0 +1,10 @@
+{
+ "answers": [
+  {"shot": 15, "choice": "B", "note": "脸居中眼位合适"},
+  {"shot": 22, "choice": "C", "note": "A英文气泡入画,B泡边擦线,C无气泡群体全"},
+  {"shot": 38, "choice": "A", "note": "B/C英文气泡入画违规,A仅无边框拟声词合规"},
+  {"shot": 44, "choice": "A", "note": "B/C叙述泡弧边入画,A干净"},
+  {"shot": 56, "choice": "B", "note": "脸部填满眼可见,C留给57拉开景别"},
+  {"shot": 57, "choice": "C", "note": "全头肩完整,适合结尾"}
+ ]
+}

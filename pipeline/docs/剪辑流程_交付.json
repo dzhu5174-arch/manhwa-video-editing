@@ -1,0 +1,179 @@
+{
+  "meta": {
+    "date": "2026-10-12",
+    "project": "勇者无法休息 · 第2话（ep02）",
+    "purpose": "把完整剪辑流程 + 全部 JSON 数据契约交给更强的 agent 优化",
+    "workdir": "C:\\Users\\19150\\Desktop\\manhua video v2\\勇者无法休息\\脚本_量产管线",
+    "python": "D:\\develop\\python\\python.exe",
+    "config": "configs\\ep02.json",
+    "canvas": [1440, 1080]
+  },
+
+  "executor_rules": [
+    "1. 禁止编写/修改任何 .py；禁止手改 config（config 只能由 director_loop.py apply 写入）",
+    "2. 禁止自己找图/拼图/裁图/发明切片名；只能用 待裁决.json 里列出的 img 与候选窗位",
+    "3. 裁决只写 work/ep02/裁决结果.json，必须过脚本校验；被拒收就改格式，不得绕校验",
+    "4. 拿不准的镜一律 HUMAN，禁止猜",
+    "5. 草稿名固定 勇者无法休息_第2话_v5_量产（v5 起）；禁止覆盖已存在草稿；禁止 --force-draft",
+    "6. 最多 2 轮裁决循环；仍有 risk 或 HUMAN 未清 → 停工并报告人类"
+  ],
+
+  "flow": [
+    {
+      "step": 1,
+      "name": "scan",
+      "command": "cd <workdir>; D:\\develop\\python\\python.exe director_loop.py scan --config configs/ep02.json",
+      "out": ["work/ep02/待裁决.json", "work/ep02/ajud_shotNN.jpg（每待裁镜一张：3 行 A/B/C，每行上=起幅 下=落幅）"],
+      "branch": "打印 CLEAN → 直接跳 Step 4；否则进 Step 2"
+    },
+    {
+      "step": 2,
+      "name": "裁决（唯一需要动脑）",
+      "input": "work/ep02/待裁决.json + ajud_shotNN.jpg",
+      "criteria_order": ["脸完整可见（巨脸特写可裁发际线/下巴，但眼鼻嘴必须在画内）", "气泡/文字框不入画", "主体居中"],
+      "answer_file": "work/ep02/裁决结果.json",
+      "answer_format": {"answers": [{"shot": 28, "choice": "B"}, {"shot": 38, "choice": "HUMAN"}, {"shot": 58, "choice": "C", "note": "可选备注"}]},
+      "rule": "A=当前窗位 B/C=备选；都不满意填 HUMAN"
+    },
+    {
+      "step": 3,
+      "name": "apply",
+      "command": "D:\\develop\\python\\python.exe director_loop.py apply --config configs/ep02.json",
+      "effect": "脚本校验裁决 → 写入 config 的 demo 覆盖（自动备份 ep02.json.bak_*) → 重跑 plan+qc 并打印新状态",
+      "branch": "仍有非人工锁定的 risk/choice → 回 Step 1（第 2 轮）；有 HUMAN → 停工报告"
+    },
+    {
+      "step": 4,
+      "name": "出片（仅当无 risk 无 HUMAN）",
+      "command": "D:\\develop\\python\\python.exe pipeline.py --config configs/ep02.json --steps preview,draft --draft-name 勇者无法休息_第2话_v5_量产",
+      "note": "预览只交人类终审，执行员不得据预览下结论；v5 起草稿名 = 勇者无法休息_第2话_v5_量产"
+    },
+    {
+      "step": "0（上游，非执行员）",
+      "name": "分镜/参数生成",
+      "by": "director_loop.py / pipeline.py 内部：plan0（分镜）→ plan（窗口+运镜）→ qc（像素规则+自动修窗）",
+      "command": "D:\\develop\\python\\python.exe pipeline.py --config configs/ep02.json --steps plan0,plan,qc"
+    }
+  ],
+
+  "motion_model": {
+    "curve": "线性匀速（两关键帧线性插值，非 S 型缓动）",
+    "evidence": "对标片实测：线性拟合残差 1%，S 型缓动残差 6%",
+    "travel": "行程 = 画宽 10%（1440×1080 → 144px），v5 实测 median 144",
+    "direction": "↓↑ 交替（v5：demo 覆盖镜保留自带方向、不占相位索引；demo 段后相位重起）",
+    "zoom": "纯平移零缩放（SIFT 全尺寸实测对标片 scale=1.0000；「推拉 2.8% / ↑推↓拉」系 ECC 小图噪声，已证伪删除）",
+    "static_forbidden": true,
+    "static_threshold_px": 60,
+    "speed_ref_px_s": "对标片 28–55 px/s（1440×1080 尺度）",
+    "v5_rules": {
+      "split_threshold_s": 4.0,
+      "split_child": "拆出的子镜继承父句块切片 + 沿用 use_cnt 错窗（±0.5H）",
+      "preview_framing": "按绝对时间铺帧，句间缝隙持上一镜末帧，总时长=末句 t1",
+      "shot_map_key": "合并句块 ID（不是最终镜号）"
+    }
+  },
+
+  "framing_model": {
+    "priority": "全宽优先：s = 1440/1800 = 0.8（切片 1800px 宽 → 画布 1440）",
+    "when_zoom": "仅当内容带太矮（放不下 4:3 窗口）才放大 s（现 range 1.00–1.30）",
+    "window_rules": ["无气泡/无文字框", "脸完整可见", "无白边黑边", "无纯黑/纯白空画面"],
+    "shot_source": "shot_map：主 agent 通读 83 张切片人工排定的 59 镜映射（禁用时间比例猜测）"
+  },
+
+  "data_contract": {
+    "configs/ep02.json": {
+      "role": "唯一驱动文件；只能由 director_loop.py apply 写入",
+      "keys": {
+        "episode/series/note": "集号/系列/说明",
+        "work": "work/ep02",
+        "setkey": "c2（第2话切片集）",
+        "pool_skip": ["000", "082"],
+        "slices": {"c1": "...\\源素材\\切片超清2x", "c2": "...\\源素材\\第2话\\切片超清2x"},
+        "timeline": "配音\\第2话_句级时间轴.csv",
+        "faces_json": "../work/ep02/faces.json",
+        "face_xml": "工具\\模型\\lbpcascade_animeface.xml",
+        "vo": "配音\\第2话_口播_云希.mp3",
+        "preview_out": "C:/Users/19150/Videos/勇者无法休息_第2话_预览.mp4",
+        "draft_name": "勇者无法休息_第2话_v4",
+        "draft_subs": true,
+        "canvas": [1440, 1080],
+        "shot_map": "镜号 -> 切片号（如 0->036，58 镜）",
+        "demo": "用户指定取景覆盖：{x0, top_start, s, x0_end, top_end}（人工唯一入口）"
+      }
+    },
+    "work/ep02/plan0.json": {
+      "type": "list[58]",
+      "fields": ["shot", "t0", "t1", "dur", "img", "s", "x0", "top_start", "top_end", "blk", "src", "text"],
+      "sample": {"shot": 0, "t0": 0.0, "t1": 3.11, "dur": 3.11, "img": "c2_036.jpg", "s": 0.8, "x0": 0.0, "top_start": 4860.0, "top_end": 4680.0, "blk": [328, 10562], "src": "shot_map", "text": "勇者刚落地就反抢了一伙盗贼，还嫌他们穷。"},
+      "note": "分镜表：来自 shot_map（禁用时间比例猜测）；text=该镜字幕"
+    },
+    "work/ep02/plan.json": {
+      "type": "list[58]",
+      "fields": ["shot", "t0", "t1", "dur", "img", "s", "x0", "top_start", "top_end", "src", "H", "static", "dirn", "text"],
+      "sample": {"shot": 0, "t0": 0.0, "t1": 3.11, "dur": 3.11, "img": "c2_036.jpg", "s": 0.8, "x0": 0.0, "top_start": 9122.0, "top_end": 8942.0, "src": "v5+", "H": 1350, "static": false, "dirn": "up", "text": "勇者刚落地就反抢了一伙盗贼，还嫌他们穷。"},
+      "note": "窗口+运镜定稿：top_start/top_end=运镜起止（原生切片坐标）；s=缩放；dirn=up/down；static=静止标记"
+    },
+    "work/ep02/qc_report.json": {
+      "type": "list[58]",
+      "fields": ["shot", "img", "status", "score", "faces_total", "face_ok", "fixed_top", "violations"],
+      "status_values": ["clean", "fixed", "choice", "risk"],
+      "violation_fields": ["top", "cut", "inside", "seams", "text_cells", "glyphs", "bubbles"],
+      "note": "cut=被切的脸数，inside=完整在窗内的脸数"
+    },
+    "work/ep02/待裁决.json": {
+      "type": "{episode, rule, shots[]}",
+      "shot_fields": ["shot", "img", "image", "note", "options{A,B,C}"],
+      "option_fields": ["s", "x0", "top_start", "top_end", "s_end"],
+      "note": "供执行员做选择题；候选之外禁止发明窗位"
+    },
+    "work/ep02/裁决结果.json": {
+      "type": "{answers[]}",
+      "fields": ["shot", "choice(A|B|C|HUMAN)", "note?"],
+      "current": {"answers": [{"shot": 28, "choice": "HUMAN"}, {"shot": 32, "choice": "C"}, {"shot": 38, "choice": "HUMAN"}, {"shot": 58, "choice": "B"}]}
+    },
+    "work/ep02/faces.json": {
+      "type": "{切片tag: [[x,y,w,h], ...]}",
+      "note": "坐标=切片原生像素；本环境 cv2 5.0 无 Haar 级联，已用 OpenCV YuNet 重建（工具\\模型\\face_detection_yunet_2023mar.onnx，cv2 不能读中文路径，需落到 ASCII 临时路径）"
+    }
+  },
+
+  "current_state": {
+    "version": "v5.1（2026-10-12 晚）",
+    "shots": 87,
+    "qc": {"clean": 41, "fixed": 25, "choice": 21, "risk": 0},
+    "dur_med_s": 2.51,
+    "pct_over_4s": 0.0,
+    "alt_rate_non_demo": 0.922,
+    "static_shots": [],
+    "zoom_shots": 0,
+    "total_dur_s": 225.05,
+    "mapping": "work/ep02/镜号映射_v5.json（旧58→新87，缺条 0）",
+    "status": "DELIVERED：preview_v5 + 草稿 v5_量产 已出（验收 A 经《验收A裁决_v5.1_2026-10-12.md》放行）；待 kimi3 画面终审（开场镜新窗 / shot13 裁泡 / 随机6拆镜窗 / block54 两子镜 81·82）",
+    "survey_v51": {"file": "work/ep02/_survey_v5/preview_v5.json", "travel_med_pct": 10.6, "ease_med": 0.89, "static": 0, "vert_horz": "67/3", "note": "zoom_ratio/alt_rate 为已知不可信/异口径，以 plan.json 为准"},
+    "v51_rules": {
+      "face_grading": "一级完整保脸 / 二级巨脸核心区(0.18–0.92fh) / 三级缩 s(≥0.70) 兜底",
+      "giant_face_eye_line": "眼线落窗口高 36.5%",
+      "giant_face_offset_floor": "同片复用错窗 ≥0.5×行程，步长 0.5H→0.3H→0.15H",
+      "static_alarm": "三级后 travel<60px → static + 强制 QC choice（不再静默取中心）"
+    },
+    "drafts": {
+      "existing_do_not_touch": ["勇者无法休息_第2话_v2_量产", "勇者无法休息_第2话_v3_量产", "勇者无法休息_第2话_v4_量产"],
+      "target_name": "勇者无法休息_第2话_v5_量产"
+    },
+    "old_preview_archived": "C:/Users/19150/Videos/勇者无法休息_第2话_预览_v4存档.mp4 (MD5 94c6d96db537642b991314a022b88500)"
+  },
+
+  "open_issues": [
+    "shot 28（c2_039.jpg）下颌/侧脸大特写：无法确认嘴是否在画内 → HUMAN",
+    "shot 38（c2_052.jpg）源图整幅韩文文字框，A/B/C 都避免不了文字框入画 → HUMAN",
+    "静止镜 6 个（行程 <60px 阈值）：5, 9, 15, 19, 35, 57",
+    "cv2 5.0 无 CascadeClassifier，Haar 路线（face_xml）已不可用；faces.json 现由 YuNet 生成，config 里 face_xml 仅为历史字段",
+    "config 的 face_xml 指向中文路径，cv2 无法读取（已有两处事故记录）"
+  ],
+
+  "handoff_notes": [
+    "参数化很强：整集=config 一份 + 58 镜参数表；人只审「裁决结果.json」与 QC 报告",
+    "可优化点：候选窗位生成算法、QC 的 risk 判定、静止镜兜底、shot_map 的自动/半自动生成、faces.json 的检测模型（YuNet 优于 Haar anime 级联）",
+    "禁止改动的边界：config 只能经 apply 写入；不得覆盖剪映已存在草稿；不得跳过 裁决结果.json 的校验"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "episode": "ep01",
+  "series": "勇者无法休息",
+  "note": "回归用：用第1话现有 plan_v5 跑通参数化管线，对比全片v7 产物",
+  "work": "../work/ep01",
+  "setkey": "c1",
+  "slices": {
+    "c1": "C:/Users/19150/Desktop/manhua video v2/勇者无法休息/源素材/切片超清2x",
+    "c2": "C:/Users/19150/Desktop/manhua video v2/勇者无法休息/源素材/第2话/切片超清2x"
+  },
+  "plan0": "C:/Users/19150/AppData/Local/Temp/opencode/userv_edit/render_plan_v5.json",
+  "faces_json": "C:/Users/19150/AppData/Local/Temp/opencode/userv_edit/faces.json",
+  "face_xml": "C:/Users/19150/AppData/Local/Temp/opencode/lbpcascade_animeface.xml",
+  "audio": "C:/Users/19150/AppData/Local/Temp/opencode/userv_edit/audio_mix_v3.m4a",
+  "preview_out": "C:/Users/19150/Videos/_量产回归_ep01预览.mp4",
+  "draft_name": "勇者无法休息S1_精剪v5",
+  "demo": {
+    "0": {"s": 1.0, "x0": 450.0, "top_start": 870.0, "top_end": 700.0},
+    "1": {"s": 1.0, "x0": 220.0, "top_start": 1200.0, "top_end": 1350.0},
+    "2": {"s": 0.75, "x0": 180.0, "top_start": 1150.0, "top_end": 1377.0},
+    "3": {"s": 1.0, "x0": 360.0, "top_start": 1500.0, "top_end": 1330.0},
+    "4": {"s": 1.0667, "x0": 474.0, "top_start": 3120.0, "top_end": 3280.0},
+    "5": {"s": 1.0, "x0": 499.0, "top_start": 7428.0, "top_end": 7263.0}
+  }
+}
