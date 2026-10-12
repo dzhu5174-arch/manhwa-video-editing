@@ -303,6 +303,7 @@ def v2_pick_window(cfg, img, boxes, cx_hint, cy_hint, fullbody=False):
     B = max(1, b1 - b0 + 1)
     BW = max(1, bx1 - bx0 + 1)
     box = None
+    fneed, giant = None, False
     if boxes:
         box = min(boxes, key=lambda b: (b[0] + b[2] / 2.0 - cx_hint) ** 2 + (b[1] + b[3] / 2.0 - cy_hint) ** 2)
     travel_n = TRAVEL_PX
@@ -311,17 +312,22 @@ def v2_pick_window(cfg, img, boxes, cx_hint, cy_hint, fullbody=False):
         s = max(s, min(V2["s_max"], V2["face_target"] * CANVAS_H / max(1.0, float(box[3]))))
     s = min(V2["s_max"], max(V2["s_min"], s))
     Wn, Hn = CANVAS_W / s, CANVAS_H / s
-    y_lo, y_hi = float(b0), float(b1 + 1) - Hn
-    fref = None
     if box:
         fx, fy, fw, fh = [float(v) for v in box[:4]]
+        if fh <= Hn - 16.0:                      # 整脸装得下 → 完整保脸
+            fneed = (fx, fy, fw, fh)
+        else:                                     # 巨脸特写 → 核心区（眼鼻嘴）必须完整
+            giant = True
+            fneed = (fx, fy + 0.18 * fh, fw, 0.74 * fh)
+    y_lo, y_hi = float(b0), float(b1 + 1) - Hn
+    if fneed:
+        _fx, _fy, _fw, _fh = fneed
         mm = 8.0
-        y_lo, y_hi = max(y_lo, fy + fh + mm - Hn), min(y_hi, fy - mm)
-        fref = (fx, fy, fw, fh)
+        y_lo, y_hi = max(y_lo, _fy + _fh + mm - Hn), min(y_hi, _fy - mm)
     if y_hi < y_lo:                                   # 脸与带冲突：以「不丢真」为先
-        c = ((fref[1] + fref[3] / 2.0) if fref else (b0 + b1) / 2.0) - Hn / 2.0
+        c = ((fneed[1] + fneed[3] / 2.0) if fneed else (b0 + b1) / 2.0) - Hn / 2.0
         y_lo = y_hi = max(0.0, min(H - Hn, c))
-    want_x = ((fref[0] + fref[2] / 2.0) if fref else (bx0 + bx1) / 2.0) - Wn / 2.0
+    want_x = ((fneed[0] + fneed[2] / 2.0) if fneed else (bx0 + bx1) / 2.0) - Wn / 2.0
     x0 = max(0.0, min(W - Wn, want_x))
     best = None
     step = max(2.0, (y_hi - y_lo) / 80.0)
@@ -336,12 +342,12 @@ def v2_pick_window(cfg, img, boxes, cx_hint, cy_hint, fullbody=False):
         d_top = float(dens[min(H - 1, wy)])
         d_bot = float(dens[min(H - 1, wy + hh - 1)])
         fok, fr = True, None
-        if fref:
-            fok = (y - 8.0 <= fref[1]) and (fref[1] + fref[3] <= y + Hn + 8.0)
-            fr = fref[3] * s / CANVAS_H
+        if fneed:
+            fok = (y - 8.0 <= fneed[1]) and (fneed[1] + fneed[3] <= y + Hn + 8.0)
+            fr = float(box[3]) * s / CANVAS_H
         lim = V2["white_area_max_fb"] if fullbody else V2["white_area_max"]
         ok = (wa <= lim) and (d_top > V2["border_density"]) and (d_bot > V2["border_density"]) and fok
-        if (not fullbody) and fr is not None and not (V2["face_lo"] <= fr <= V2["face_hi"]):
+        if (not fullbody) and (not giant) and fr is not None and not (V2["face_lo"] <= fr <= V2["face_hi"]):
             ok = False
         cen = abs((y + Hn / 2.0) - (b0 + b1 + 1) / 2.0) / float(B)
         sc = -4.0 * wa - 0.6 * cen - (0.0 if fr is None else abs(fr - V2["face_target"])) + (5.0 if ok else 0.0)
@@ -351,7 +357,7 @@ def v2_pick_window(cfg, img, boxes, cx_hint, cy_hint, fullbody=False):
     if best is None:
         return None
     _sc, yc, wa, d_top, d_bot, fok, fr, ok = best
-    if fref and not fok:      # 不丢真优先：有脸时只接受「脸完整」的落点
+    if fneed and not fok:      # 不丢真优先：有脸时只接受「脸（或巨脸核心区）完整」的落点
         best2 = None
         y = y_lo
         while y <= y_hi + 1e-6:
@@ -360,10 +366,10 @@ def v2_pick_window(cfg, img, boxes, cx_hint, cy_hint, fullbody=False):
             sub = white[wy:wy + hh, wx:wx + ww]
             if sub.size == 0:
                 break
-            fok2 = (y - 8.0 <= fref[1]) and (fref[1] + fref[3] <= y + Hn + 8.0)
+            fok2 = (y - 8.0 <= fneed[1]) and (fneed[1] + fneed[3] <= y + Hn + 8.0)
             if fok2:
                 wa2 = float(sub.mean())
-                fr2 = fref[3] * s / CANVAS_H
+                fr2 = float(box[3]) * s / CANVAS_H
                 sc2 = -4.0 * wa2 - abs(fr2 - V2["face_target"])
                 if best2 is None or sc2 > best2[0]:
                     best2 = (sc2, y, wa2, float(dens[min(H - 1, wy)]), float(dens[min(H - 1, wy + hh - 1)]), True, fr2, False)
@@ -373,7 +379,7 @@ def v2_pick_window(cfg, img, boxes, cx_hint, cy_hint, fullbody=False):
     trav = min(travel_n / s, max(0.0, y_hi - y_lo))
     mid = min(max(yc, y_lo + trav / 2.0), y_hi - trav / 2.0) if trav > 0 else yc
     return dict(s=float(s), x0=float(x0), y_mid=float(mid), trav=float(trav),
-                band=[b0, b1, bx0, bx1], white_area=wa, face_ratio=fr,
+                band=[b0, b1, bx0, bx1], white_area=wa, face_ratio=fr, giant=bool(giant),
                 d_top=d_top, d_bot=d_bot, face_ok=bool(fok), legal=bool(ok))
 
 
@@ -450,6 +456,8 @@ def step_plan(cfg):
                     q["alarm"] = "v2_window_not_legal"
                 elif abs(te - ts) * s7 < 60.0:
                     q["alarm"] = "v2_small_travel"
+                if r2.get("giant"):
+                    q["giant_face"] = True
         q["H"] = int(round(CANVAS_H / q["s"]))
         q["static"] = abs(q["top_end"] - q["top_start"]) * q["s"] < STATIC_MIN_PX
         q["dirn"] = "static" if q["static"] else ("up" if q["top_end"] < q["top_start"] else "down")
@@ -490,19 +498,27 @@ def step_qc(cfg, check_only=False):
     try:
         _plan = json.load(open(plan_path(cfg), encoding="utf-8"))
         alarm_shots = sorted(p["shot"] for p in _plan if p.get("alarm"))
-        if alarm_shots:
+        giant_shots = sorted(p["shot"] for p in _plan if p.get("giant_face"))
+        if alarm_shots or giant_shots:
             rp = os.path.join(w, "qc_report.json")
             rep = json.load(open(rp, encoding="utf-8"))
             for e in rep:
                 if e.get("shot") in alarm_shots and e.get("status") != "risk":
                     e["status"] = "choice"
                     e["alarm"] = "v5.1 三级保脸后静止/冲突 → 人工裁决"
+                if e.get("shot") in giant_shots:
+                    # 巨脸特写：按法则只保「眼鼻嘴核心区」，qcmod 的整脸判据不再算 risk
+                    e["giant_face"] = True
+                    if e.get("status") == "risk":
+                        e["status"] = "choice"
+                        e["note"] = "巨脸特写：核心区(0.18-0.92fh)完整，允许裁发际线/下巴；整脸判据放宽"
             json.dump(rep, open(rp, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
             import collections as _c
             cnt = _c.Counter(e.get("status") for e in rep)
             r["clean"] = cnt.get("clean", 0); r["fixed"] = cnt.get("fixed", 0)
             r["choice"] = cnt.get("choice", 0); r["risk"] = cnt.get("risk", 0)
             print("v5.1 alarm->choice:", alarm_shots)
+            print("v2 巨脸核心区放宽:", giant_shots)
     except Exception as _e:
         print("  !! v5.1 alarm 处理失败:", _e)
     if check_only and (r["risk"] or r["choice"]):

@@ -370,7 +370,7 @@
   "fixed_top": null,
   "violations": [
    {
-    "top": 2033.5,
+    "top": 2074.2,
     "cut": 1,
     "inside": 0,
     "seams": [],
@@ -379,7 +379,7 @@
     "bubbles": []
    },
    {
-    "top": 2033.5,
+    "top": 2074.2,
     "cut": 1,
     "inside": 0,
     "seams": [],
@@ -388,7 +388,7 @@
     "bubbles": []
    },
    {
-    "top": 2033.5,
+    "top": 2074.2,
     "cut": 1,
     "inside": 0,
     "seams": [],
@@ -398,7 +398,8 @@
    }
   ],
   "pan_px": 0.0,
-  "alarm": "v5.1 三级保脸后静止/冲突 → 人工裁决"
+  "alarm": "v5.1 三级保脸后静止/冲突 → 人工裁决",
+  "giant_face": true
  },
  {
   "shot": 10,
@@ -410,7 +411,7 @@
   "fixed_top": null,
   "violations": [
    {
-    "top": 2033.5,
+    "top": 2074.2,
     "cut": 1,
     "inside": 0,
     "seams": [],
@@ -419,7 +420,7 @@
     "bubbles": []
    },
    {
-    "top": 2033.5,
+    "top": 2074.2,
     "cut": 1,
     "inside": 0,
     "seams": [],
@@ -428,7 +429,7 @@
     "bubbles": []
    },
    {
-    "top": 2033.5,
+    "top": 2074.2,
     "cut": 1,
     "inside": 0,
     "seams": [],
@@ -438,7 +439,8 @@
    }
   ],
   "pan_px": 0.0,
-  "alarm": "v5.1 三级保脸后静止/冲突 → 人工裁决"
+  "alarm": "v5.1 三级保脸后静止/冲突 → 人工裁决",
+  "giant_face": true
  },
  {
   "shot": 11,
@@ -1147,75 +1149,93 @@
   "fixed_top": null,
   "violations": [
    {
-    "top": 1610.5,
+    "top": 1589.2,
     "cut": 1,
     "inside": 0,
     "seams": [],
     "text_cells": [],
-    "glyphs": 22,
+    "glyphs": 21,
     "bubbles": []
    },
    {
-    "top": 1610.5,
+    "top": 1660.2,
     "cut": 1,
     "inside": 0,
     "seams": [],
     "text_cells": [],
-    "glyphs": 22,
+    "glyphs": 25,
     "bubbles": []
    },
    {
-    "top": 1610.5,
+    "top": 1731.2,
     "cut": 1,
     "inside": 0,
     "seams": [],
     "text_cells": [],
-    "glyphs": 22,
+    "glyphs": 28,
     "bubbles": []
    }
   ],
-  "pan_px": 0.0,
-  "alarm": "v5.1 三级保脸后静止/冲突 → 人工裁决"
+  "pan_px": 144.0,
+  "alarm": "v5.1 三级保脸后静止/冲突 → 人工裁决",
+  "giant_face": true
  },
  {
   "shot": 28,
   "img": "c2_022.jpg",
   "status": "choice",
-  "score": 0,
+  "score": 5,
   "faces_total": 1,
   "face_ok": false,
   "fixed_top": null,
   "violations": [
    {
-    "top": 1610.5,
+    "top": 2263.7,
+    "cut": 1,
+    "inside": 0,
+    "seams": [],
+    "text_cells": [
+     [
+      492,
+      1039,
+      633,
+      1058,
+      7
+     ]
+    ],
+    "glyphs": 63,
+    "bubbles": [
+     [
+      367,
+      950,
+      578,
+      115,
+      18
+     ]
+    ]
+   },
+   {
+    "top": 2192.7,
     "cut": 1,
     "inside": 0,
     "seams": [],
     "text_cells": [],
-    "glyphs": 22,
+    "glyphs": 40,
     "bubbles": []
    },
    {
-    "top": 1610.5,
+    "top": 2121.7,
     "cut": 1,
     "inside": 0,
     "seams": [],
     "text_cells": [],
-    "glyphs": 22,
-    "bubbles": []
-   },
-   {
-    "top": 1610.5,
-    "cut": 1,
-    "inside": 0,
-    "seams": [],
-    "text_cells": [],
-    "glyphs": 22,
+    "glyphs": 45,
     "bubbles": []
    }
   ],
-  "pan_px": 0.0,
-  "alarm": "v5.1 三级保脸后静止/冲突 → 人工裁决"
+  "pan_px": 144.0,
+  "alarm": "v5.1 三级保脸后静止/冲突 → 人工裁决",
+  "giant_face": true
  },
  {
   "shot": 29,
@@ -1268,80 +1288,84 @@
  {
   "shot": 30,
   "img": "c2_024.jpg",
-  "status": "risk",
+  "status": "choice",
   "score": 0,
   "faces_total": 1,
   "face_ok": false,
   "fixed_top": null,
   "violations": [
    {
-    "top": 3229.0,
+    "top": 3298.4,
     "cut": 1,
     "inside": 0,
     "seams": [],
     "text_cells": [],
-    "glyphs": 7,
+    "glyphs": 12,
     "bubbles": []
    },
    {
-    "top": 3229.0,
+    "top": 3298.4,
     "cut": 1,
     "inside": 0,
     "seams": [],
     "text_cells": [],
-    "glyphs": 7,
+    "glyphs": 12,
     "bubbles": []
    },
    {
-    "top": 3229.0,
+    "top": 3298.4,
     "cut": 1,
     "inside": 0,
     "seams": [],
     "text_cells": [],
-    "glyphs": 7,
+    "glyphs": 12,
     "bubbles": []
    }
   ],
-  "pan_px": 0.0
+  "pan_px": 0.0,
+  "giant_face": true,
+  "note": "巨脸特写：核心区(0.18-0.92fh)完整，允许裁发际线/下巴；整脸判据放宽"
  },
  {
   "shot": 31,
   "img": "c2_024.jpg",
-  "status": "risk",
+  "status": "choice",
   "score": 0,
   "faces_total": 1,
   "face_ok": false,
   "fixed_top": null,
   "violations": [
    {
-    "top": 3229.0,
+    "top": 3298.4,
     "cut": 1,
     "inside": 0,
     "seams": [],
     "text_cells": [],
-    "glyphs": 7,
+    "glyphs": 12,
     "bubbles": []
    },
    {
-    "top": 3229.0,
+    "top": 3298.4,
     "cut": 1,
     "inside": 0,
     "seams": [],
     "text_cells": [],
-    "glyphs": 7,
+    "glyphs": 12,
     "bubbles": []
    },
    {
-    "top": 3229.0,
+    "top": 3298.4,
     "cut": 1,
     "inside": 0,
     "seams": [],
     "text_cells": [],
-    "glyphs": 7,
+    "glyphs": 12,
     "bubbles": []
    }
   ],
-  "pan_px": 0.0
+  "pan_px": 0.0,
+  "giant_face": true,
+  "note": "巨脸特写：核心区(0.18-0.92fh)完整，允许裁发际线/下巴；整脸判据放宽"
  },
  {
   "shot": 32,
@@ -3710,80 +3734,84 @@
  {
   "shot": 81,
   "img": "c2_079.jpg",
-  "status": "risk",
+  "status": "choice",
   "score": 0,
   "faces_total": 1,
   "face_ok": false,
   "fixed_top": null,
   "violations": [
    {
-    "top": 2444.2,
+    "top": 2523.5,
     "cut": 1,
     "inside": 0,
     "seams": [],
     "text_cells": [],
-    "glyphs": 5,
+    "glyphs": 8,
     "bubbles": []
    },
    {
-    "top": 2444.2,
+    "top": 2523.5,
     "cut": 1,
     "inside": 0,
     "seams": [],
     "text_cells": [],
-    "glyphs": 5,
+    "glyphs": 8,
     "bubbles": []
    },
    {
-    "top": 2444.2,
+    "top": 2523.5,
     "cut": 1,
     "inside": 0,
     "seams": [],
     "text_cells": [],
-    "glyphs": 5,
+    "glyphs": 8,
     "bubbles": []
    }
   ],
-  "pan_px": 0.0
+  "pan_px": 0.0,
+  "giant_face": true,
+  "note": "巨脸特写：核心区(0.18-0.92fh)完整，允许裁发际线/下巴；整脸判据放宽"
  },
  {
   "shot": 82,
   "img": "c2_079.jpg",
-  "status": "risk",
+  "status": "choice",
   "score": 0,
   "faces_total": 1,
   "face_ok": false,
   "fixed_top": null,
   "violations": [
    {
-    "top": 2444.2,
+    "top": 2523.5,
     "cut": 1,
     "inside": 0,
     "seams": [],
     "text_cells": [],
-    "glyphs": 5,
+    "glyphs": 8,
     "bubbles": []
    },
    {
-    "top": 2444.2,
+    "top": 2523.5,
     "cut": 1,
     "inside": 0,
     "seams": [],
     "text_cells": [],
-    "glyphs": 5,
+    "glyphs": 8,
     "bubbles": []
    },
    {
-    "top": 2444.2,
+    "top": 2523.5,
     "cut": 1,
     "inside": 0,
     "seams": [],
     "text_cells": [],
-    "glyphs": 5,
+    "glyphs": 8,
     "bubbles": []
    }
   ],
-  "pan_px": 0.0
+  "pan_px": 0.0,
+  "giant_face": true,
+  "note": "巨脸特写：核心区(0.18-0.92fh)完整，允许裁发际线/下巴；整脸判据放宽"
  },
  {
   "shot": 83,

@@ -281,8 +281,8 @@
   "block": 6,
   "s": 1.894736842105263,
   "x0": 226.5,
-  "top_start": 1993.0,
-  "top_end": 1993.0,
+  "top_start": 2034.0,
+  "top_end": 2034.0,
   "src": "v2",
   "v2": {
    "white_area": 0.0032,
@@ -298,6 +298,7 @@
    "legal": false
   },
   "alarm": "v2_window_not_legal",
+  "giant_face": true,
   "H": 570,
   "static": true,
   "dirn": "static",
@@ -312,8 +313,8 @@
   "block": 6,
   "s": 1.894736842105263,
   "x0": 226.5,
-  "top_start": 1993.0,
-  "top_end": 1993.0,
+  "top_start": 2034.0,
+  "top_end": 2034.0,
   "src": "v2",
   "v2": {
    "white_area": 0.0032,
@@ -329,6 +330,7 @@
    "legal": false
   },
   "alarm": "v2_window_not_legal",
+  "giant_face": true,
   "H": 570,
   "static": true,
   "dirn": "static",
@@ -729,11 +731,11 @@
   "block": 19,
   "s": 1.0140845070422535,
   "x0": 209.0,
-  "top_start": 1570.0,
-  "top_end": 1570.0,
+  "top_start": 1560.0,
+  "top_end": 1702.0,
   "src": "v2",
   "v2": {
-   "white_area": 0.0363,
+   "white_area": 0.035,
    "face_ratio": 1.125,
    "d_top": 1.0,
    "d_bot": 1.0,
@@ -746,9 +748,10 @@
    "legal": false
   },
   "alarm": "v2_window_not_legal",
+  "giant_face": true,
   "H": 1065,
-  "static": true,
-  "dirn": "static",
+  "static": false,
+  "dirn": "down",
   "text": "回到现在——神力到手了，但"
  },
  {
@@ -760,11 +763,11 @@
   "block": 19,
   "s": 1.0140845070422535,
   "x0": 209.0,
-  "top_start": 1570.0,
-  "top_end": 1570.0,
+  "top_start": 1973.0,
+  "top_end": 1831.0,
   "src": "v2",
   "v2": {
-   "white_area": 0.0363,
+   "white_area": 0.035,
    "face_ratio": 1.125,
    "d_top": 1.0,
    "d_bot": 1.0,
@@ -777,9 +780,10 @@
    "legal": false
   },
   "alarm": "v2_window_not_legal",
+  "giant_face": true,
   "H": 1065,
-  "static": true,
-  "dirn": "static",
+  "static": false,
+  "dirn": "up",
   "text": "拉昂不觉得自己现在就能用。"
  },
  {
@@ -822,8 +826,8 @@
   "block": 21,
   "s": 1.5,
   "x0": 803.0,
-  "top_start": 3229.0,
-  "top_end": 3229.0,
+  "top_start": 3298.4,
+  "top_end": 3298.4,
   "src": "v2",
   "v2": {
    "white_area": 0.0044,
@@ -839,6 +843,7 @@
    "legal": false
   },
   "alarm": "v2_window_not_legal",
+  "giant_face": true,
   "H": 720,
   "static": true,
   "dirn": "static",
@@ -853,8 +858,8 @@
   "block": 21,
   "s": 1.5,
   "x0": 803.0,
-  "top_start": 3229.0,
-  "top_end": 3229.0,
+  "top_start": 3298.4,
+  "top_end": 3298.4,
   "src": "v2",
   "v2": {
    "white_area": 0.0044,
@@ -870,6 +875,7 @@
    "legal": false
   },
   "alarm": "v2_window_not_legal",
+  "giant_face": true,
   "H": 720,
   "static": true,
   "dirn": "static",
@@ -2231,11 +2237,11 @@
   "block": 54,
   "s": 1.6705336426914152,
   "x0": 499.5,
-  "top_start": 2444.2,
-  "top_end": 2444.2,
+  "top_start": 2523.5,
+  "top_end": 2523.5,
   "src": "v2",
   "v2": {
-   "white_area": 0.009,
+   "white_area": 0.0089,
    "face_ratio": 2.452,
    "d_top": 1.0,
    "d_bot": 1.0,
@@ -2248,6 +2254,7 @@
    "legal": false
   },
   "alarm": "v2_window_not_legal",
+  "giant_face": true,
   "H": 646,
   "static": true,
   "dirn": "static",
@@ -2262,11 +2269,11 @@
   "block": 54,
   "s": 1.6705336426914152,
   "x0": 499.5,
-  "top_start": 2444.2,
-  "top_end": 2444.2,
+  "top_start": 2523.5,
+  "top_end": 2523.5,
   "src": "v2",
   "v2": {
-   "white_area": 0.009,
+   "white_area": 0.0089,
    "face_ratio": 2.452,
    "d_top": 1.0,
    "d_bot": 1.0,
@@ -2279,6 +2286,7 @@
    "legal": false
   },
   "alarm": "v2_window_not_legal",
+  "giant_face": true,
   "H": 646,
   "static": true,
   "dirn": "static",
