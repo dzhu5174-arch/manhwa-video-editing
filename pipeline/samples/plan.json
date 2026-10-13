@@ -14,15 +14,14 @@
   "v2": {
    "white_area": 0.1399,
    "face_ratio": 0.55,
-   "d_top": 1.0,
-   "d_bot": 0.0,
+   "legal": false,
    "band": [
     5801,
     10063,
     0,
     1799
    ],
-   "legal": false
+   "src": "v2"
   },
   "alarm": "v2_window_not_legal",
   "H": 1350,
@@ -45,15 +44,14 @@
   "v2": {
    "white_area": 0.0,
    "face_ratio": null,
-   "d_top": 1.0,
-   "d_bot": 1.0,
+   "legal": true,
    "band": [
     832,
     4302,
     1536,
     1540
    ],
-   "legal": true
+   "src": "v2"
   },
   "H": 491,
   "static": false,
@@ -69,21 +67,20 @@
   "block": 1,
   "s": 2.2,
   "x0": 1145.5,
-  "top_start": 2600.2,
-  "top_end": 2534.8,
+  "top_start": 2354.8,
+  "top_end": 2289.3,
   "src": "v2",
   "v2": {
    "white_area": 0.0,
    "face_ratio": null,
-   "d_top": 1.0,
-   "d_bot": 1.0,
+   "legal": true,
    "band": [
     832,
     4302,
     1536,
     1540
    ],
-   "legal": true
+   "src": "v2"
   },
   "H": 491,
   "static": false,
@@ -105,15 +102,14 @@
   "v2": {
    "white_area": 0.0043,
    "face_ratio": null,
-   "d_top": 0.981,
-   "d_bot": 1.0,
+   "legal": true,
    "band": [
     3063,
     5076,
     0,
     1799
    ],
-   "legal": true
+   "src": "v2"
   },
   "H": 1350,
   "static": false,
@@ -135,15 +131,14 @@
   "v2": {
    "white_area": 0.0015,
    "face_ratio": null,
-   "d_top": 0.95,
-   "d_bot": 0.999,
+   "legal": true,
    "band": [
     0,
     7747,
     0,
     1799
    ],
-   "legal": true
+   "src": "v2"
   },
   "H": 1350,
   "static": false,
@@ -159,21 +154,20 @@
   "block": 3,
   "s": 0.8,
   "x0": 0.0,
-  "top_start": 4503.8,
-  "top_end": 4683.8,
+  "top_start": 3828.8,
+  "top_end": 4008.8,
   "src": "v2",
   "v2": {
    "white_area": 0.0015,
    "face_ratio": null,
-   "d_top": 0.95,
-   "d_bot": 0.999,
+   "legal": true,
    "band": [
     0,
     7747,
     0,
     1799
    ],
-   "legal": true
+   "src": "v2"
   },
   "H": 1350,
   "static": false,
@@ -195,15 +189,14 @@
   "v2": {
    "white_area": 0.0,
    "face_ratio": null,
-   "d_top": 1.0,
-   "d_bot": 1.0,
+   "legal": true,
    "band": [
     0,
     3674,
     0,
     1799
    ],
-   "legal": true
+   "src": "v2"
   },
   "H": 1350,
   "static": false,
@@ -225,15 +218,14 @@
   "v2": {
    "white_area": 0.0017,
    "face_ratio": 0.613,
-   "d_top": 1.0,
-   "d_bot": 1.0,
+   "legal": false,
    "band": [
     84,
     4998,
     0,
     1799
    ],
-   "legal": false
+   "src": "v2"
   },
   "alarm": "v2_window_not_legal",
   "H": 1350,
@@ -250,21 +242,20 @@
   "block": 5,
   "s": 0.8,
   "x0": 0.0,
-  "top_start": 3433.0,
-  "top_end": 3253.0,
+  "top_start": 2798.0,
+  "top_end": 2618.0,
   "src": "v2",
   "v2": {
    "white_area": 0.0017,
    "face_ratio": 0.613,
-   "d_top": 1.0,
-   "d_bot": 1.0,
+   "legal": false,
    "band": [
     84,
     4998,
     0,
     1799
    ],
-   "legal": false
+   "src": "v2"
   },
   "alarm": "v2_window_not_legal",
   "H": 1350,
@@ -279,7 +270,7 @@
   "dur": 2.09,
   "img": "c2_005.jpg",
   "block": 6,
-  "s": 1.894736842105263,
+  "s": 1.89474,
   "x0": 226.5,
   "top_start": 2034.0,
   "top_end": 2034.0,
@@ -287,18 +278,16 @@
   "v2": {
    "white_area": 0.0032,
    "face_ratio": 1.426,
-   "d_top": 0.423,
-   "d_bot": 0.423,
+   "legal": false,
    "band": [
     3473,
     4118,
     0,
     1799
    ],
-   "legal": false
+   "src": "v2"
   },
   "alarm": "v2_window_not_legal",
-  "giant_face": true,
   "H": 570,
   "static": true,
   "dirn": "static",
@@ -311,7 +300,7 @@
   "dur": 2.09,
   "img": "c2_005.jpg",
   "block": 6,
-  "s": 1.894736842105263,
+  "s": 1.89474,
   "x0": 226.5,
   "top_start": 2034.0,
   "top_end": 2034.0,
@@ -319,18 +308,16 @@
   "v2": {
    "white_area": 0.0032,
    "face_ratio": 1.426,
-   "d_top": 0.423,
-   "d_bot": 0.423,
+   "legal": false,
    "band": [
     3473,
     4118,
     0,
     1799
    ],
-   "legal": false
+   "src": "v2"
   },
   "alarm": "v2_window_not_legal",
-  "giant_face": true,
   "H": 570,
   "static": true,
   "dirn": "static",
@@ -351,15 +338,14 @@
   "v2": {
    "white_area": 0.0074,
    "face_ratio": 0.576,
-   "d_top": 1.0,
-   "d_bot": 1.0,
+   "legal": true,
    "band": [
     1937,
     6713,
     0,
     632
    ],
-   "legal": true
+   "src": "v2"
   },
   "H": 491,
   "static": false,
@@ -381,15 +367,14 @@
   "v2": {
    "white_area": 0.0,
    "face_ratio": null,
-   "d_top": 1.0,
-   "d_bot": 1.0,
+   "legal": true,
    "band": [
     0,
     8871,
     0,
     1799
    ],
-   "legal": true
+   "src": "v2"
   },
   "H": 1350,
   "static": false,
@@ -411,15 +396,14 @@
   "v2": {
    "white_area": 0.0262,
    "face_ratio": 0.8,
-   "d_top": 1.0,
-   "d_bot": 0.992,
+   "legal": false,
    "band": [
     0,
     5531,
     0,
     1799
    ],
-   "legal": false
+   "src": "v2"
   },
   "alarm": "v2_window_not_legal",
   "H": 1350,
@@ -436,21 +420,20 @@
   "block": 9,
   "s": 0.8,
   "x0": 0.0,
-  "top_start": 2880.0,
-  "top_end": 2700.0,
+  "top_start": 2205.0,
+  "top_end": 2025.0,
   "src": "v2",
   "v2": {
    "white_area": 0.0262,
    "face_ratio": 0.8,
-   "d_top": 1.0,
-   "d_bot": 0.992,
+   "legal": false,
    "band": [
     0,
     5531,
     0,
     1799
    ],
-   "legal": false
+   "src": "v2"
   },
   "alarm": "v2_window_not_legal",
   "H": 1350,
@@ -607,7 +590,7 @@
   "dur": 3.5,
   "img": "c2_016.jpg",
   "block": 16,
-  "s": 1.6701030927835052,
+  "s": 1.6701,
   "x0": 55.9,
   "top_start": 4305.0,
   "top_end": 4391.2,
@@ -615,15 +598,14 @@
   "v2": {
    "white_area": 0.1559,
    "face_ratio": 0.45,
-   "d_top": 0.853,
-   "d_bot": 0.779,
+   "legal": false,
    "band": [
     0,
     9303,
     0,
     1799
    ],
-   "legal": false
+   "src": "v2"
   },
   "alarm": "v2_window_not_legal",
   "H": 647,
@@ -646,15 +628,14 @@
   "v2": {
    "white_area": 0.0451,
    "face_ratio": null,
-   "d_top": 0.948,
-   "d_bot": 0.864,
+   "legal": false,
    "band": [
     404,
     3961,
     0,
     1799
    ],
-   "legal": false
+   "src": "v2"
   },
   "alarm": "v2_window_not_legal",
   "H": 1350,
@@ -669,7 +650,7 @@
   "dur": 2.87,
   "img": "c2_021.jpg",
   "block": 18,
-  "s": 1.3651685393258426,
+  "s": 1.36517,
   "x0": 745.2,
   "top_start": 2578.9,
   "top_end": 2684.4,
@@ -677,15 +658,14 @@
   "v2": {
    "white_area": 0.0007,
    "face_ratio": 0.45,
-   "d_top": 1.0,
-   "d_bot": 0.996,
+   "legal": true,
    "band": [
     0,
     5871,
     0,
     1799
    ],
-   "legal": true
+   "src": "v2"
   },
   "H": 791,
   "static": false,
@@ -699,23 +679,22 @@
   "dur": 2.87,
   "img": "c2_021.jpg",
   "block": 18,
-  "s": 1.3651685393258426,
+  "s": 1.36517,
   "x0": 745.2,
-  "top_start": 3039.5,
-  "top_end": 2934.0,
+  "top_start": 2684.4,
+  "top_end": 2578.9,
   "src": "v2",
   "v2": {
    "white_area": 0.0007,
    "face_ratio": 0.45,
-   "d_top": 1.0,
-   "d_bot": 0.996,
+   "legal": true,
    "band": [
     0,
     5871,
     0,
     1799
    ],
-   "legal": true
+   "src": "v2"
   },
   "H": 791,
   "static": false,
@@ -729,7 +708,7 @@
   "dur": 1.85,
   "img": "c2_022.jpg",
   "block": 19,
-  "s": 1.0140845070422535,
+  "s": 1.01408,
   "x0": 209.0,
   "top_start": 1560.0,
   "top_end": 1702.0,
@@ -737,18 +716,16 @@
   "v2": {
    "white_area": 0.035,
    "face_ratio": 1.125,
-   "d_top": 1.0,
-   "d_bot": 1.0,
+   "legal": false,
    "band": [
     0,
     3399,
     0,
     1419
    ],
-   "legal": false
+   "src": "v2"
   },
   "alarm": "v2_window_not_legal",
-  "giant_face": true,
   "H": 1065,
   "static": false,
   "dirn": "down",
@@ -761,26 +738,24 @@
   "dur": 1.85,
   "img": "c2_022.jpg",
   "block": 19,
-  "s": 1.0140845070422535,
+  "s": 1.01408,
   "x0": 209.0,
-  "top_start": 1973.0,
-  "top_end": 1831.0,
+  "top_start": 1702.0,
+  "top_end": 1560.0,
   "src": "v2",
   "v2": {
    "white_area": 0.035,
    "face_ratio": 1.125,
-   "d_top": 1.0,
-   "d_bot": 1.0,
+   "legal": false,
    "band": [
     0,
     3399,
     0,
     1419
    ],
-   "legal": false
+   "src": "v2"
   },
   "alarm": "v2_window_not_legal",
-  "giant_face": true,
   "H": 1065,
   "static": false,
   "dirn": "up",
@@ -801,15 +776,14 @@
   "v2": {
    "white_area": 0.0021,
    "face_ratio": null,
-   "d_top": 0.039,
-   "d_bot": 0.551,
+   "legal": false,
    "band": [
     1708,
     3842,
     0,
     1799
    ],
-   "legal": false
+   "src": "v2"
   },
   "alarm": "v2_window_not_legal",
   "H": 1350,
@@ -832,18 +806,16 @@
   "v2": {
    "white_area": 0.0044,
    "face_ratio": 1.928,
-   "d_top": 1.0,
-   "d_bot": 1.0,
+   "legal": false,
    "band": [
     624,
     5534,
     0,
     959
    ],
-   "legal": false
+   "src": "v2"
   },
   "alarm": "v2_window_not_legal",
-  "giant_face": true,
   "H": 720,
   "static": true,
   "dirn": "static",
@@ -864,18 +836,16 @@
   "v2": {
    "white_area": 0.0044,
    "face_ratio": 1.928,
-   "d_top": 1.0,
-   "d_bot": 1.0,
+   "legal": false,
    "band": [
     624,
     5534,
     0,
     959
    ],
-   "legal": false
+   "src": "v2"
   },
   "alarm": "v2_window_not_legal",
-  "giant_face": true,
   "H": 720,
   "static": true,
   "dirn": "static",
@@ -985,15 +955,14 @@
   "v2": {
    "white_area": 0.0008,
    "face_ratio": 0.234,
-   "d_top": 1.0,
-   "d_bot": 1.0,
+   "legal": false,
    "band": [
     1670,
     4831,
     0,
     1799
    ],
-   "legal": false
+   "src": "v2"
   },
   "alarm": "v2_window_not_legal",
   "H": 491,
@@ -1008,7 +977,7 @@
   "dur": 1.83,
   "img": "c2_030.jpg",
   "block": 26,
-  "s": 1.265625,
+  "s": 1.26562,
   "x0": 662.2,
   "top_start": 3923.2,
   "top_end": 4037.0,
@@ -1016,15 +985,14 @@
   "v2": {
    "white_area": 0.0,
    "face_ratio": 0.45,
-   "d_top": 1.0,
-   "d_bot": 1.0,
+   "legal": true,
    "band": [
     1802,
     7186,
     0,
     1799
    ],
-   "legal": true
+   "src": "v2"
   },
   "H": 853,
   "static": false,
@@ -1038,23 +1006,22 @@
   "dur": 1.83,
   "img": "c2_030.jpg",
   "block": 26,
-  "s": 1.265625,
+  "s": 1.26562,
   "x0": 662.2,
-  "top_start": 4222.8,
-  "top_end": 4109.0,
+  "top_start": 4037.0,
+  "top_end": 3923.2,
   "src": "v2",
   "v2": {
    "white_area": 0.0,
    "face_ratio": 0.45,
-   "d_top": 1.0,
-   "d_bot": 1.0,
+   "legal": true,
    "band": [
     1802,
     7186,
     0,
     1799
    ],
-   "legal": true
+   "src": "v2"
   },
   "H": 853,
   "static": false,
@@ -1076,15 +1043,14 @@
   "v2": {
    "white_area": 0.0,
    "face_ratio": null,
-   "d_top": 1.0,
-   "d_bot": 1.0,
+   "legal": true,
    "band": [
     807,
     3225,
     0,
     1799
    ],
-   "legal": true
+   "src": "v2"
   },
   "H": 1350,
   "static": false,
@@ -1100,21 +1066,20 @@
   "block": 27,
   "s": 0.8,
   "x0": 0.0,
-  "top_start": 1816.0,
-  "top_end": 1636.0,
+  "top_start": 1431.5,
+  "top_end": 1251.5,
   "src": "v2",
   "v2": {
    "white_area": 0.0,
    "face_ratio": null,
-   "d_top": 1.0,
-   "d_bot": 1.0,
+   "legal": true,
    "band": [
     807,
     3225,
     0,
     1799
    ],
-   "legal": true
+   "src": "v2"
   },
   "H": 1350,
   "static": false,
@@ -1136,15 +1101,14 @@
   "v2": {
    "white_area": 0.0002,
    "face_ratio": 0.546,
-   "d_top": 1.0,
-   "d_bot": 1.0,
+   "legal": true,
    "band": [
     0,
     5231,
     0,
     1799
    ],
-   "legal": true
+   "src": "v2"
   },
   "H": 1350,
   "static": false,
@@ -1166,15 +1130,14 @@
   "v2": {
    "white_area": 0.0024,
    "face_ratio": 0.45,
-   "d_top": 1.0,
-   "d_bot": 1.0,
+   "legal": true,
    "band": [
     1249,
     2660,
     0,
     1799
    ],
-   "legal": true
+   "src": "v2"
   },
   "H": 711,
   "static": false,
@@ -1190,21 +1153,20 @@
   "block": 29,
   "s": 1.51875,
   "x0": 0.0,
-  "top_start": 1867.0,
-  "top_end": 1961.8,
+  "top_start": 1552.1,
+  "top_end": 1646.9,
   "src": "v2",
   "v2": {
    "white_area": 0.0024,
    "face_ratio": 0.45,
-   "d_top": 1.0,
-   "d_bot": 1.0,
+   "legal": true,
    "band": [
     1249,
     2660,
     0,
     1799
    ],
-   "legal": true
+   "src": "v2"
   },
   "H": 711,
   "static": false,
@@ -1218,7 +1180,7 @@
   "dur": 2.07,
   "img": "c2_054.jpg",
   "block": 30,
-  "s": 1.7295373665480427,
+  "s": 1.72954,
   "x0": 469.2,
   "top_start": 1856.0,
   "top_end": 1772.7,
@@ -1226,15 +1188,14 @@
   "v2": {
    "white_area": 0.0021,
    "face_ratio": 0.45,
-   "d_top": 1.0,
-   "d_bot": 0.998,
+   "legal": true,
    "band": [
     1644,
     4387,
     0,
     1799
    ],
-   "legal": true
+   "src": "v2"
   },
   "H": 624,
   "static": false,
@@ -1248,23 +1209,22 @@
   "dur": 2.55,
   "img": "c2_054.jpg",
   "block": 31,
-  "s": 1.7295373665480427,
+  "s": 1.72954,
   "x0": 469.2,
-  "top_start": 1895.0,
-  "top_end": 1978.2,
+  "top_start": 1772.7,
+  "top_end": 1856.0,
   "src": "v2",
   "v2": {
    "white_area": 0.0021,
    "face_ratio": 0.45,
-   "d_top": 1.0,
-   "d_bot": 0.998,
+   "legal": true,
    "band": [
     1644,
     4387,
     0,
     1799
    ],
-   "legal": true
+   "src": "v2"
   },
   "H": 624,
   "static": false,
@@ -1286,15 +1246,14 @@
   "v2": {
    "white_area": 0.0073,
    "face_ratio": null,
-   "d_top": 0.943,
-   "d_bot": 1.0,
+   "legal": true,
    "band": [
     1410,
     3479,
     0,
     1799
    ],
-   "legal": true
+   "src": "v2"
   },
   "H": 1350,
   "static": false,
@@ -1310,21 +1269,20 @@
   "block": 33,
   "s": 0.8,
   "x0": 0.0,
-  "top_start": 2215.0,
-  "top_end": 2395.0,
+  "top_start": 1680.0,
+  "top_end": 1860.0,
   "src": "v2",
   "v2": {
    "white_area": 0.0073,
    "face_ratio": null,
-   "d_top": 0.943,
-   "d_bot": 1.0,
+   "legal": true,
    "band": [
     1410,
     3479,
     0,
     1799
    ],
-   "legal": true
+   "src": "v2"
   },
   "H": 1350,
   "static": false,
@@ -1340,21 +1298,20 @@
   "block": 33,
   "s": 0.8,
   "x0": 0.0,
-  "top_start": 2175.0,
-  "top_end": 1995.0,
+  "top_start": 1860.0,
+  "top_end": 1680.0,
   "src": "v2",
   "v2": {
    "white_area": 0.0073,
    "face_ratio": null,
-   "d_top": 0.943,
-   "d_bot": 1.0,
+   "legal": true,
    "band": [
     1410,
     3479,
     0,
     1799
    ],
-   "legal": true
+   "src": "v2"
   },
   "H": 1350,
   "static": false,
@@ -1368,7 +1325,7 @@
   "dur": 1.995,
   "img": "c2_056.jpg",
   "block": 34,
-  "s": 1.8479087452471483,
+  "s": 1.84791,
   "x0": 388.9,
   "top_start": 2045.1,
   "top_end": 2123.0,
@@ -1376,15 +1333,14 @@
   "v2": {
    "white_area": 0.0,
    "face_ratio": 0.45,
-   "d_top": 1.0,
-   "d_bot": 1.0,
+   "legal": true,
    "band": [
     1417,
     4493,
     0,
     1240
    ],
-   "legal": true
+   "src": "v2"
   },
   "H": 584,
   "static": false,
@@ -1398,23 +1354,22 @@
   "dur": 1.995,
   "img": "c2_056.jpg",
   "block": 34,
-  "s": 1.8479087452471483,
+  "s": 1.84791,
   "x0": 388.9,
-  "top_start": 2224.9,
-  "top_end": 2147.0,
+  "top_start": 2123.0,
+  "top_end": 2045.1,
   "src": "v2",
   "v2": {
    "white_area": 0.0,
    "face_ratio": 0.45,
-   "d_top": 1.0,
-   "d_bot": 1.0,
+   "legal": true,
    "band": [
     1417,
     4493,
     0,
     1240
    ],
-   "legal": true
+   "src": "v2"
   },
   "H": 584,
   "static": false,
@@ -1446,7 +1401,7 @@
   "dur": 2.485,
   "img": "c2_058.jpg",
   "block": 36,
-  "s": 1.894736842105263,
+  "s": 1.89474,
   "x0": 519.5,
   "top_start": 3194.0,
   "top_end": 3270.0,
@@ -1454,15 +1409,14 @@
   "v2": {
    "white_area": 0.0359,
    "face_ratio": null,
-   "d_top": 0.575,
-   "d_bot": 0.628,
+   "legal": false,
    "band": [
     3194,
     3839,
     0,
     1799
    ],
-   "legal": false
+   "src": "v2"
   },
   "alarm": "v2_window_not_legal",
   "H": 570,
@@ -1477,23 +1431,22 @@
   "dur": 2.485,
   "img": "c2_058.jpg",
   "block": 36,
-  "s": 1.894736842105263,
+  "s": 1.89474,
   "x0": 519.5,
-  "top_start": 3315.0,
-  "top_end": 3239.0,
+  "top_start": 3270.0,
+  "top_end": 3194.0,
   "src": "v2",
   "v2": {
    "white_area": 0.0359,
    "face_ratio": null,
-   "d_top": 0.575,
-   "d_bot": 0.628,
+   "legal": false,
    "band": [
     3194,
     3839,
     0,
     1799
    ],
-   "legal": false
+   "src": "v2"
   },
   "alarm": "v2_window_not_legal",
   "H": 570,
@@ -1508,23 +1461,22 @@
   "dur": 2.42,
   "img": "c2_058.jpg",
   "block": 37,
-  "s": 1.894736842105263,
+  "s": 1.89474,
   "x0": 519.5,
-  "top_start": 3201.0,
-  "top_end": 3277.0,
+  "top_start": 3194.0,
+  "top_end": 3270.0,
   "src": "v2",
   "v2": {
    "white_area": 0.0359,
    "face_ratio": null,
-   "d_top": 0.575,
-   "d_bot": 0.628,
+   "legal": false,
    "band": [
     3194,
     3839,
     0,
     1799
    ],
-   "legal": false
+   "src": "v2"
   },
   "alarm": "v2_window_not_legal",
   "H": 570,
@@ -1565,15 +1517,14 @@
   "v2": {
    "white_area": 0.0146,
    "face_ratio": 0.703,
-   "d_top": 0.979,
-   "d_bot": 0.916,
+   "legal": false,
    "band": [
     2643,
     5717,
     0,
     1799
    ],
-   "legal": false
+   "src": "v2"
   },
   "alarm": "v2_window_not_legal",
   "H": 1350,
@@ -1590,22 +1541,22 @@
   "block": 39,
   "s": 0.8,
   "x0": 0.0,
-  "top_start": 3580.0,
-  "top_end": 3760.0,
+  "top_start": 2941.4,
+  "top_end": 3121.4,
   "src": "v2",
   "v2": {
-   "white_area": 0.0148,
-   "face_ratio": 0.507,
-   "d_top": 0.971,
-   "d_bot": 0.9,
+   "white_area": 0.0146,
+   "face_ratio": 0.703,
+   "legal": false,
    "band": [
     2643,
     5717,
     0,
     1799
    ],
-   "legal": true
+   "src": "v2"
   },
+  "alarm": "v2_window_not_legal",
   "H": 1350,
   "static": false,
   "dirn": "down",
@@ -1626,15 +1577,14 @@
   "v2": {
    "white_area": 0.0001,
    "face_ratio": 0.249,
-   "d_top": 1.0,
-   "d_bot": 1.0,
+   "legal": false,
    "band": [
     1328,
     4295,
     1281,
     1799
    ],
-   "legal": false
+   "src": "v2"
   },
   "alarm": "v2_window_not_legal",
   "H": 491,
@@ -1651,21 +1601,20 @@
   "block": 40,
   "s": 2.2,
   "x0": 640.2,
-  "top_start": 2484.0,
-  "top_end": 2549.5,
+  "top_start": 2428.5,
+  "top_end": 2494.0,
   "src": "v2",
   "v2": {
    "white_area": 0.0001,
    "face_ratio": 0.249,
-   "d_top": 1.0,
-   "d_bot": 1.0,
+   "legal": false,
    "band": [
     1328,
     4295,
     1281,
     1799
    ],
-   "legal": false
+   "src": "v2"
   },
   "alarm": "v2_window_not_legal",
   "H": 491,
@@ -1739,15 +1688,14 @@
   "v2": {
    "white_area": 0.0002,
    "face_ratio": 0.422,
-   "d_top": 0.097,
-   "d_bot": 0.271,
+   "legal": false,
    "band": [
     2469,
     3582,
     0,
     1799
    ],
-   "legal": false
+   "src": "v2"
   },
   "alarm": "v2_window_not_legal",
   "H": 491,
@@ -1770,15 +1718,14 @@
   "v2": {
    "white_area": 0.0002,
    "face_ratio": 0.422,
-   "d_top": 0.097,
-   "d_bot": 0.271,
+   "legal": false,
    "band": [
     2469,
     3582,
     0,
     1799
    ],
-   "legal": false
+   "src": "v2"
   },
   "alarm": "v2_window_not_legal",
   "H": 491,
@@ -1819,15 +1766,14 @@
   "v2": {
    "white_area": 0.0021,
    "face_ratio": null,
-   "d_top": 1.0,
-   "d_bot": 0.954,
+   "legal": true,
    "band": [
     552,
     8649,
     0,
     1799
    ],
-   "legal": true
+   "src": "v2"
   },
   "H": 1350,
   "static": false,
@@ -1843,21 +1789,20 @@
   "block": 45,
   "s": 0.8,
   "x0": 0.0,
-  "top_start": 4511.0,
-  "top_end": 4691.0,
+  "top_start": 3836.0,
+  "top_end": 4016.0,
   "src": "v2",
   "v2": {
    "white_area": 0.0021,
    "face_ratio": null,
-   "d_top": 1.0,
-   "d_bot": 0.954,
+   "legal": true,
    "band": [
     552,
     8649,
     0,
     1799
    ],
-   "legal": true
+   "src": "v2"
   },
   "H": 1350,
   "static": false,
@@ -1871,7 +1816,7 @@
   "dur": 2.535,
   "img": "c2_067.jpg",
   "block": 46,
-  "s": 1.0167364016736402,
+  "s": 1.01674,
   "x0": 383.7,
   "top_start": 1994.0,
   "top_end": 1852.4,
@@ -1879,15 +1824,14 @@
   "v2": {
    "white_area": 0.0027,
    "face_ratio": 0.45,
-   "d_top": 0.998,
-   "d_bot": 0.985,
+   "legal": true,
    "band": [
     0,
     5181,
     0,
     1799
    ],
-   "legal": true
+   "src": "v2"
   },
   "H": 1062,
   "static": false,
@@ -1901,23 +1845,22 @@
   "dur": 2.535,
   "img": "c2_067.jpg",
   "block": 46,
-  "s": 1.0167364016736402,
+  "s": 1.01674,
   "x0": 383.7,
-  "top_start": 2093.0,
-  "top_end": 2234.6,
+  "top_start": 1852.4,
+  "top_end": 1994.0,
   "src": "v2",
   "v2": {
    "white_area": 0.0027,
    "face_ratio": 0.45,
-   "d_top": 0.998,
-   "d_bot": 0.985,
+   "legal": true,
    "band": [
     0,
     5181,
     0,
     1799
    ],
-   "legal": true
+   "src": "v2"
   },
   "H": 1062,
   "static": false,
@@ -1939,15 +1882,14 @@
   "v2": {
    "white_area": 0.0171,
    "face_ratio": null,
-   "d_top": 1.0,
-   "d_bot": 1.0,
+   "legal": true,
    "band": [
     2702,
     4515,
     0,
     1799
    ],
-   "legal": true
+   "src": "v2"
   },
   "H": 1350,
   "static": false,
@@ -1963,21 +1905,20 @@
   "block": 47,
   "s": 0.8,
   "x0": 0.0,
-  "top_start": 2879.0,
-  "top_end": 3059.0,
+  "top_start": 2844.0,
+  "top_end": 3024.0,
   "src": "v2",
   "v2": {
    "white_area": 0.0171,
    "face_ratio": null,
-   "d_top": 1.0,
-   "d_bot": 1.0,
+   "legal": true,
    "band": [
     2702,
     4515,
     0,
     1799
    ],
-   "legal": true
+   "src": "v2"
   },
   "H": 1350,
   "static": false,
@@ -1999,15 +1940,14 @@
   "v2": {
    "white_area": 0.0331,
    "face_ratio": 0.921,
-   "d_top": 1.0,
-   "d_bot": 1.0,
+   "legal": false,
    "band": [
     446,
     7413,
     1158,
     1799
    ],
-   "legal": false
+   "src": "v2"
   },
   "alarm": "v2_window_not_legal",
   "H": 491,
@@ -2030,15 +1970,14 @@
   "v2": {
    "white_area": 0.0014,
    "face_ratio": null,
-   "d_top": 0.212,
-   "d_bot": 0.212,
+   "legal": false,
    "band": [
     1,
     8160,
     0,
     1799
    ],
-   "legal": false
+   "src": "v2"
   },
   "alarm": "v2_window_not_legal",
   "H": 1350,
@@ -2055,21 +1994,20 @@
   "block": 49,
   "s": 0.8,
   "x0": 0.0,
-  "top_start": 4571.0,
-  "top_end": 4391.0,
+  "top_start": 4596.0,
+  "top_end": 4416.0,
   "src": "v2",
   "v2": {
    "white_area": 0.0014,
    "face_ratio": null,
-   "d_top": 0.212,
-   "d_bot": 0.212,
+   "legal": false,
    "band": [
     1,
     8160,
     0,
     1799
    ],
-   "legal": false
+   "src": "v2"
   },
   "alarm": "v2_window_not_legal",
   "H": 1350,
@@ -2084,7 +2022,7 @@
   "dur": 3.28,
   "img": "c2_072.jpg",
   "block": 50,
-  "s": 1.3737373737373737,
+  "s": 1.37374,
   "x0": 375.4,
   "top_start": 3051.0,
   "top_end": 3155.8,
@@ -2092,15 +2030,14 @@
   "v2": {
    "white_area": 0.0473,
    "face_ratio": null,
-   "d_top": 1.0,
-   "d_bot": 0.988,
+   "legal": false,
    "band": [
     3051,
     3941,
     0,
     1799
    ],
-   "legal": false
+   "src": "v2"
   },
   "alarm": "v2_window_not_legal",
   "H": 786,
@@ -2123,15 +2060,14 @@
   "v2": {
    "white_area": 0.0015,
    "face_ratio": null,
-   "d_top": 1.0,
-   "d_bot": 1.0,
+   "legal": true,
    "band": [
     1956,
     4553,
     0,
     1799
    ],
-   "legal": true
+   "src": "v2"
   },
   "H": 1350,
   "static": false,
@@ -2145,7 +2081,7 @@
   "dur": 2.025,
   "img": "c2_075.jpg",
   "block": 52,
-  "s": 1.986206896551724,
+  "s": 1.98621,
   "x0": 0.0,
   "top_start": 5959.3,
   "top_end": 6031.8,
@@ -2153,15 +2089,14 @@
   "v2": {
    "white_area": 0.0023,
    "face_ratio": null,
-   "d_top": 1.0,
-   "d_bot": 0.968,
+   "legal": true,
    "band": [
     2426,
     10901,
     0,
     724
    ],
-   "legal": true
+   "src": "v2"
   },
   "H": 544,
   "static": false,
@@ -2175,23 +2110,22 @@
   "dur": 2.025,
   "img": "c2_075.jpg",
   "block": 52,
-  "s": 1.986206896551724,
+  "s": 1.98621,
   "x0": 0.0,
-  "top_start": 6303.6,
-  "top_end": 6231.1,
+  "top_start": 6031.8,
+  "top_end": 5959.3,
   "src": "v2",
   "v2": {
    "white_area": 0.0023,
    "face_ratio": null,
-   "d_top": 1.0,
-   "d_bot": 0.968,
+   "legal": true,
    "band": [
     2426,
     10901,
     0,
     724
    ],
-   "legal": true
+   "src": "v2"
   },
   "H": 544,
   "static": false,
@@ -2207,21 +2141,20 @@
   "block": 53,
   "s": 2.2,
   "x0": 1145.5,
-  "top_start": 2043.9,
-  "top_end": 2109.3,
+  "top_start": 2289.3,
+  "top_end": 2354.8,
   "src": "v2",
   "v2": {
    "white_area": 0.0,
    "face_ratio": null,
-   "d_top": 1.0,
-   "d_bot": 1.0,
+   "legal": true,
    "band": [
     832,
     4302,
     1536,
     1540
    ],
-   "legal": true
+   "src": "v2"
   },
   "H": 491,
   "static": false,
@@ -2235,7 +2168,7 @@
   "dur": 2.07,
   "img": "c2_079.jpg",
   "block": 54,
-  "s": 1.6705336426914152,
+  "s": 1.67053,
   "x0": 499.5,
   "top_start": 2523.5,
   "top_end": 2523.5,
@@ -2243,19 +2176,17 @@
   "v2": {
    "white_area": 0.0089,
    "face_ratio": 2.452,
-   "d_top": 1.0,
-   "d_bot": 1.0,
+   "legal": false,
    "band": [
     1279,
     4183,
     0,
     861
    ],
-   "legal": false
+   "src": "v2"
   },
   "alarm": "v2_window_not_legal",
-  "giant_face": true,
-  "H": 646,
+  "H": 647,
   "static": true,
   "dirn": "static",
   "text": "拉昂问他：「那你为什么带着杀"
@@ -2267,7 +2198,7 @@
   "dur": 2.07,
   "img": "c2_079.jpg",
   "block": 54,
-  "s": 1.6705336426914152,
+  "s": 1.67053,
   "x0": 499.5,
   "top_start": 2523.5,
   "top_end": 2523.5,
@@ -2275,19 +2206,17 @@
   "v2": {
    "white_area": 0.0089,
    "face_ratio": 2.452,
-   "d_top": 1.0,
-   "d_bot": 1.0,
+   "legal": false,
    "band": [
     1279,
     4183,
     0,
     861
    ],
-   "legal": false
+   "src": "v2"
   },
   "alarm": "v2_window_not_legal",
-  "giant_face": true,
-  "H": 646,
+  "H": 647,
   "static": true,
   "dirn": "static",
   "text": "意绕到我背后？你他妈是谁？」"
@@ -2307,15 +2236,14 @@
   "v2": {
    "white_area": 0.0039,
    "face_ratio": null,
-   "d_top": 0.942,
-   "d_bot": 1.0,
+   "legal": true,
    "band": [
     1649,
     3938,
     0,
     1799
    ],
-   "legal": true
+   "src": "v2"
   },
   "H": 1350,
   "static": false,

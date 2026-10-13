@@ -89,7 +89,7 @@
   "fixed_top": null,
   "violations": [
    {
-    "top": 2600.2,
+    "top": 2354.8,
     "cut": 0,
     "inside": 0,
     "seams": [],
@@ -98,7 +98,7 @@
     "bubbles": []
    },
    {
-    "top": 2567.5,
+    "top": 2322.1,
     "cut": 0,
     "inside": 0,
     "seams": [],
@@ -107,7 +107,7 @@
     "bubbles": []
    },
    {
-    "top": 2534.8,
+    "top": 2289.3,
     "cut": 0,
     "inside": 0,
     "seams": [],
@@ -116,7 +116,7 @@
     "bubbles": []
    }
   ],
-  "pan_px": 143.9
+  "pan_px": 144.1
  },
  {
   "shot": 3,
@@ -206,30 +206,30 @@
   "fixed_top": null,
   "violations": [
    {
-    "top": 4503.8,
+    "top": 3828.8,
     "cut": 0,
     "inside": 0,
     "seams": [],
     "text_cells": [],
-    "glyphs": 79,
+    "glyphs": 69,
     "bubbles": []
    },
    {
-    "top": 4593.8,
+    "top": 3918.8,
     "cut": 0,
     "inside": 0,
     "seams": [],
     "text_cells": [],
-    "glyphs": 70,
+    "glyphs": 61,
     "bubbles": []
    },
    {
-    "top": 4683.8,
+    "top": 4008.8,
     "cut": 0,
     "inside": 0,
     "seams": [],
     "text_cells": [],
-    "glyphs": 64,
+    "glyphs": 59,
     "bubbles": []
    }
   ],
@@ -326,34 +326,34 @@
   "status": "choice",
   "score": 0,
   "faces_total": 1,
-  "face_ok": false,
+  "face_ok": true,
   "fixed_top": null,
   "violations": [
    {
-    "top": 3473.0,
-    "cut": 1,
-    "inside": 0,
+    "top": 2798.0,
+    "cut": 0,
+    "inside": 1,
     "seams": [],
     "text_cells": [],
-    "glyphs": 67,
+    "glyphs": 41,
     "bubbles": []
    },
    {
-    "top": 3383.0,
-    "cut": 1,
-    "inside": 0,
+    "top": 2708.0,
+    "cut": 0,
+    "inside": 1,
     "seams": [],
     "text_cells": [],
-    "glyphs": 71,
+    "glyphs": 39,
     "bubbles": []
    },
    {
-    "top": 3293.0,
-    "cut": 1,
-    "inside": 0,
+    "top": 2618.0,
+    "cut": 0,
+    "inside": 1,
     "seams": [],
     "text_cells": [],
-    "glyphs": 70,
+    "glyphs": 34,
     "bubbles": []
    }
   ],
@@ -398,8 +398,7 @@
    }
   ],
   "pan_px": 0.0,
-  "alarm": "v5.1 三级保脸后静止/冲突 → 人工裁决",
-  "giant_face": true
+  "alarm": "v5.1 三级保脸后静止/冲突 → 人工裁决"
  },
  {
   "shot": 10,
@@ -439,8 +438,7 @@
    }
   ],
   "pan_px": 0.0,
-  "alarm": "v5.1 三级保脸后静止/冲突 → 人工裁决",
-  "giant_face": true
+  "alarm": "v5.1 三级保脸后静止/冲突 → 人工裁决"
  },
  {
   "shot": 11,
@@ -566,34 +564,34 @@
   "status": "choice",
   "score": 0,
   "faces_total": 2,
-  "face_ok": false,
+  "face_ok": true,
   "fixed_top": null,
   "violations": [
    {
-    "top": 2880.0,
-    "cut": 2,
-    "inside": 0,
+    "top": 2205.0,
+    "cut": 0,
+    "inside": 1,
     "seams": [],
     "text_cells": [],
-    "glyphs": 70,
+    "glyphs": 54,
     "bubbles": []
    },
    {
-    "top": 2790.0,
-    "cut": 2,
-    "inside": 0,
+    "top": 2115.0,
+    "cut": 0,
+    "inside": 1,
     "seams": [],
     "text_cells": [],
-    "glyphs": 76,
+    "glyphs": 53,
     "bubbles": []
    },
    {
-    "top": 2700.0,
-    "cut": 2,
-    "inside": 0,
+    "top": 2025.0,
+    "cut": 0,
+    "inside": 1,
     "seams": [],
     "text_cells": [],
-    "glyphs": 74,
+    "glyphs": 50,
     "bubbles": []
    }
   ],
@@ -1103,37 +1101,37 @@
  {
   "shot": 26,
   "img": "c2_021.jpg",
-  "status": "fixed",
+  "status": "clean",
   "score": 0,
   "faces_total": 3,
-  "face_ok": false,
+  "face_ok": true,
   "fixed_top": null,
   "violations": [
    {
-    "top": 3079.9,
-    "cut": 1,
-    "inside": 0,
-    "seams": [],
-    "text_cells": [],
-    "glyphs": 37,
-    "bubbles": []
-   },
-   {
-    "top": 3027.2,
-    "cut": 1,
-    "inside": 0,
-    "seams": [],
-    "text_cells": [],
-    "glyphs": 37,
-    "bubbles": []
-   },
-   {
-    "top": 2974.4,
+    "top": 2684.4,
     "cut": 0,
     "inside": 1,
     "seams": [],
     "text_cells": [],
-    "glyphs": 38,
+    "glyphs": 21,
+    "bubbles": []
+   },
+   {
+    "top": 2631.7,
+    "cut": 0,
+    "inside": 1,
+    "seams": [],
+    "text_cells": [],
+    "glyphs": 18,
+    "bubbles": []
+   },
+   {
+    "top": 2578.9,
+    "cut": 0,
+    "inside": 1,
+    "seams": [],
+    "text_cells": [],
+    "glyphs": 11,
     "bubbles": []
    }
   ],
@@ -1177,65 +1175,47 @@
    }
   ],
   "pan_px": 144.0,
-  "alarm": "v5.1 三级保脸后静止/冲突 → 人工裁决",
-  "giant_face": true
+  "alarm": "v5.1 三级保脸后静止/冲突 → 人工裁决"
  },
  {
   "shot": 28,
   "img": "c2_022.jpg",
   "status": "choice",
-  "score": 5,
+  "score": 0,
   "faces_total": 1,
   "face_ok": false,
   "fixed_top": null,
   "violations": [
    {
-    "top": 2263.7,
-    "cut": 1,
-    "inside": 0,
-    "seams": [],
-    "text_cells": [
-     [
-      492,
-      1039,
-      633,
-      1058,
-      7
-     ]
-    ],
-    "glyphs": 63,
-    "bubbles": [
-     [
-      367,
-      950,
-      578,
-      115,
-      18
-     ]
-    ]
-   },
-   {
-    "top": 2192.7,
+    "top": 1731.2,
     "cut": 1,
     "inside": 0,
     "seams": [],
     "text_cells": [],
-    "glyphs": 40,
+    "glyphs": 28,
     "bubbles": []
    },
    {
-    "top": 2121.7,
+    "top": 1660.2,
     "cut": 1,
     "inside": 0,
     "seams": [],
     "text_cells": [],
-    "glyphs": 45,
+    "glyphs": 25,
+    "bubbles": []
+   },
+   {
+    "top": 1589.2,
+    "cut": 1,
+    "inside": 0,
+    "seams": [],
+    "text_cells": [],
+    "glyphs": 21,
     "bubbles": []
    }
   ],
   "pan_px": 144.0,
-  "alarm": "v5.1 三级保脸后静止/冲突 → 人工裁决",
-  "giant_face": true
+  "alarm": "v5.1 三级保脸后静止/冲突 → 人工裁决"
  },
  {
   "shot": 29,
@@ -1288,7 +1268,7 @@
  {
   "shot": 30,
   "img": "c2_024.jpg",
-  "status": "choice",
+  "status": "risk",
   "score": 0,
   "faces_total": 1,
   "face_ok": false,
@@ -1322,14 +1302,12 @@
     "bubbles": []
    }
   ],
-  "pan_px": 0.0,
-  "giant_face": true,
-  "note": "巨脸特写：核心区(0.18-0.92fh)完整，允许裁发际线/下巴；整脸判据放宽"
+  "pan_px": 0.0
  },
  {
   "shot": 31,
   "img": "c2_024.jpg",
-  "status": "choice",
+  "status": "risk",
   "score": 0,
   "faces_total": 1,
   "face_ok": false,
@@ -1363,9 +1341,7 @@
     "bubbles": []
    }
   ],
-  "pan_px": 0.0,
-  "giant_face": true,
-  "note": "巨脸特写：核心区(0.18-0.92fh)完整，允许裁发际线/下巴；整脸判据放宽"
+  "pan_px": 0.0
  },
  {
   "shot": 32,
@@ -1782,37 +1758,37 @@
  {
   "shot": 39,
   "img": "c2_030.jpg",
-  "status": "fixed",
+  "status": "clean",
   "score": 0,
   "faces_total": 3,
-  "face_ok": false,
+  "face_ok": true,
   "fixed_top": null,
   "violations": [
    {
-    "top": 4463.7,
+    "top": 4037.0,
     "cut": 0,
-    "inside": 0,
-    "seams": [],
-    "text_cells": [],
-    "glyphs": 12,
-    "bubbles": []
-   },
-   {
-    "top": 4406.8,
-    "cut": 1,
-    "inside": 0,
+    "inside": 1,
     "seams": [],
     "text_cells": [],
     "glyphs": 14,
     "bubbles": []
    },
    {
-    "top": 4349.9,
-    "cut": 1,
-    "inside": 0,
+    "top": 3980.1,
+    "cut": 0,
+    "inside": 1,
     "seams": [],
     "text_cells": [],
     "glyphs": 15,
+    "bubbles": []
+   },
+   {
+    "top": 3923.2,
+    "cut": 0,
+    "inside": 1,
+    "seams": [],
+    "text_cells": [],
+    "glyphs": 13,
     "bubbles": []
    }
   ],
@@ -1860,43 +1836,37 @@
  {
   "shot": 41,
   "img": "c2_035.jpg",
-  "status": "fixed",
-  "score": 9,
+  "status": "clean",
+  "score": 0,
   "faces_total": 0,
   "face_ok": true,
   "fixed_top": null,
   "violations": [
    {
-    "top": 2106.5,
+    "top": 1431.5,
     "cut": 0,
     "inside": 0,
-    "seams": [
-     "bottom"
-    ],
+    "seams": [],
     "text_cells": [],
-    "glyphs": 7,
+    "glyphs": 8,
     "bubbles": []
    },
    {
-    "top": 2016.5,
+    "top": 1341.5,
     "cut": 0,
     "inside": 0,
-    "seams": [
-     "bottom"
-    ],
+    "seams": [],
     "text_cells": [],
-    "glyphs": 6,
+    "glyphs": 9,
     "bubbles": []
    },
    {
-    "top": 1926.5,
+    "top": 1251.5,
     "cut": 0,
     "inside": 0,
-    "seams": [
-     "bottom"
-    ],
+    "seams": [],
     "text_cells": [],
-    "glyphs": 6,
+    "glyphs": 9,
     "bubbles": []
    }
   ],
@@ -1983,37 +1953,37 @@
  {
   "shot": 44,
   "img": "c2_053.jpg",
-  "status": "fixed",
+  "status": "clean",
   "score": 0,
   "faces_total": 2,
-  "face_ok": false,
+  "face_ok": true,
   "fixed_top": null,
   "violations": [
    {
-    "top": 1907.6,
+    "top": 1552.1,
     "cut": 0,
     "inside": 1,
     "seams": [],
     "text_cells": [],
-    "glyphs": 28,
+    "glyphs": 11,
     "bubbles": []
    },
    {
-    "top": 1955.0,
-    "cut": 1,
-    "inside": 0,
+    "top": 1599.5,
+    "cut": 0,
+    "inside": 1,
     "seams": [],
     "text_cells": [],
-    "glyphs": 37,
+    "glyphs": 14,
     "bubbles": []
    },
    {
-    "top": 2002.4,
-    "cut": 1,
-    "inside": 0,
+    "top": 1646.9,
+    "cut": 0,
+    "inside": 1,
     "seams": [],
     "text_cells": [],
-    "glyphs": 47,
+    "glyphs": 12,
     "bubbles": []
    }
   ],
@@ -2061,41 +2031,41 @@
  {
   "shot": 46,
   "img": "c2_054.jpg",
-  "status": "fixed",
+  "status": "clean",
   "score": 0,
   "faces_total": 2,
-  "face_ok": false,
+  "face_ok": true,
   "fixed_top": null,
   "violations": [
    {
-    "top": 2085.0,
-    "cut": 1,
-    "inside": 0,
-    "seams": [],
-    "text_cells": [],
-    "glyphs": 22,
-    "bubbles": []
-   },
-   {
-    "top": 2126.6,
-    "cut": 1,
-    "inside": 0,
+    "top": 1772.7,
+    "cut": 0,
+    "inside": 1,
     "seams": [],
     "text_cells": [],
     "glyphs": 16,
     "bubbles": []
    },
    {
-    "top": 2168.2,
+    "top": 1814.3,
     "cut": 0,
-    "inside": 0,
+    "inside": 1,
     "seams": [],
     "text_cells": [],
-    "glyphs": 14,
+    "glyphs": 20,
+    "bubbles": []
+   },
+   {
+    "top": 1856.0,
+    "cut": 0,
+    "inside": 1,
+    "seams": [],
+    "text_cells": [],
+    "glyphs": 21,
     "bubbles": []
    }
   ],
-  "pan_px": 143.9
+  "pan_px": 144.1
  },
  {
   "shot": 47,
@@ -2139,46 +2109,38 @@
  {
   "shot": 48,
   "img": "c2_055.jpg",
-  "status": "fixed",
-  "score": 3,
+  "status": "clean",
+  "score": 0,
   "faces_total": 0,
   "face_ok": true,
   "fixed_top": null,
   "violations": [
    {
-    "top": 2355.0,
+    "top": 1680.0,
     "cut": 0,
     "inside": 0,
     "seams": [],
     "text_cells": [],
-    "glyphs": 50,
+    "glyphs": 112,
     "bubbles": []
    },
    {
-    "top": 2445.0,
+    "top": 1770.0,
     "cut": 0,
     "inside": 0,
     "seams": [],
     "text_cells": [],
-    "glyphs": 46,
+    "glyphs": 98,
     "bubbles": []
    },
    {
-    "top": 2535.0,
+    "top": 1860.0,
     "cut": 0,
     "inside": 0,
     "seams": [],
     "text_cells": [],
-    "glyphs": 46,
-    "bubbles": [
-     [
-      114,
-      945,
-      1299,
-      405,
-      6
-     ]
-    ]
+    "glyphs": 91,
+    "bubbles": []
    }
   ],
   "pan_px": 144.0
@@ -2193,30 +2155,30 @@
   "fixed_top": null,
   "violations": [
    {
-    "top": 2175.0,
+    "top": 1860.0,
     "cut": 0,
     "inside": 0,
     "seams": [],
     "text_cells": [],
-    "glyphs": 66,
+    "glyphs": 91,
     "bubbles": []
    },
    {
-    "top": 2085.0,
+    "top": 1770.0,
     "cut": 0,
     "inside": 0,
     "seams": [],
     "text_cells": [],
-    "glyphs": 76,
+    "glyphs": 98,
     "bubbles": []
    },
    {
-    "top": 1995.0,
+    "top": 1680.0,
     "cut": 0,
     "inside": 0,
     "seams": [],
     "text_cells": [],
-    "glyphs": 80,
+    "glyphs": 112,
     "bubbles": []
    }
   ],
@@ -2264,37 +2226,37 @@
  {
   "shot": 51,
   "img": "c2_056.jpg",
-  "status": "fixed",
+  "status": "clean",
   "score": 0,
   "faces_total": 2,
-  "face_ok": false,
+  "face_ok": true,
   "fixed_top": null,
   "violations": [
    {
-    "top": 2415.2,
+    "top": 2123.0,
     "cut": 0,
-    "inside": 0,
+    "inside": 1,
     "seams": [],
     "text_cells": [],
-    "glyphs": 8,
+    "glyphs": 15,
     "bubbles": []
    },
    {
-    "top": 2376.2,
-    "cut": 1,
-    "inside": 0,
+    "top": 2084.1,
+    "cut": 0,
+    "inside": 1,
     "seams": [],
     "text_cells": [],
-    "glyphs": 7,
+    "glyphs": 13,
     "bubbles": []
    },
    {
-    "top": 2337.3,
-    "cut": 1,
-    "inside": 0,
+    "top": 2045.1,
+    "cut": 0,
+    "inside": 1,
     "seams": [],
     "text_cells": [],
-    "glyphs": 10,
+    "glyphs": 14,
     "bubbles": []
    }
   ],
@@ -2383,81 +2345,37 @@
   "shot": 54,
   "img": "c2_058.jpg",
   "status": "choice",
-  "score": 19,
+  "score": 0,
   "faces_total": 0,
   "face_ok": true,
   "fixed_top": null,
   "violations": [
    {
-    "top": 3555.0,
-    "cut": 0,
-    "inside": 0,
-    "seams": [
-     "bottom"
-    ],
-    "text_cells": [
-     [
-      17,
-      375,
-      150,
-      459,
-      9
-     ]
-    ],
-    "glyphs": 23,
-    "bubbles": [
-     [
-      0,
-      372,
-      760,
-      198,
-      10
-     ]
-    ]
-   },
-   {
-    "top": 3517.0,
-    "cut": 0,
-    "inside": 0,
-    "seams": [
-     "bottom"
-    ],
-    "text_cells": [
-     [
-      15,
-      323,
-      150,
-      472,
-      9
-     ]
-    ],
-    "glyphs": 24,
-    "bubbles": [
-     [
-      0,
-      410,
-      760,
-      160,
-      10
-     ]
-    ]
-   },
-   {
-    "top": 3479.0,
+    "top": 3270.0,
     "cut": 0,
     "inside": 0,
     "seams": [],
     "text_cells": [],
-    "glyphs": 23,
-    "bubbles": [
-     [
-      0,
-      448,
-      760,
-      122,
-      10
-     ]
-    ]
+    "glyphs": 19,
+    "bubbles": []
+   },
+   {
+    "top": 3232.0,
+    "cut": 0,
+    "inside": 0,
+    "seams": [],
+    "text_cells": [],
+    "glyphs": 18,
+    "bubbles": []
+   },
+   {
+    "top": 3194.0,
+    "cut": 0,
+    "inside": 0,
+    "seams": [],
+    "text_cells": [],
+    "glyphs": 17,
+    "bubbles": []
    }
   ],
   "pan_px": 144.0,
@@ -2467,79 +2385,37 @@
   "shot": 55,
   "img": "c2_058.jpg",
   "status": "choice",
-  "score": 16,
+  "score": 0,
   "faces_total": 0,
   "face_ok": true,
   "fixed_top": null,
   "violations": [
    {
-    "top": 3441.0,
-    "cut": 0,
-    "inside": 0,
-    "seams": [],
-    "text_cells": [
-     [
-      5,
-      489,
-      150,
-      564,
-      10
-     ]
-    ],
-    "glyphs": 25,
-    "bubbles": [
-     [
-      59,
-      486,
-      671,
-      84,
-      7
-     ]
-    ]
-   },
-   {
-    "top": 3479.0,
+    "top": 3194.0,
     "cut": 0,
     "inside": 0,
     "seams": [],
     "text_cells": [],
-    "glyphs": 23,
-    "bubbles": [
-     [
-      0,
-      448,
-      760,
-      122,
-      10
-     ]
-    ]
+    "glyphs": 17,
+    "bubbles": []
    },
    {
-    "top": 3517.0,
+    "top": 3232.0,
     "cut": 0,
     "inside": 0,
-    "seams": [
-     "bottom"
-    ],
-    "text_cells": [
-     [
-      15,
-      323,
-      150,
-      472,
-      9
-     ]
-    ],
-    "glyphs": 24,
-    "bubbles": [
-     [
-      0,
-      410,
-      760,
-      160,
-      10
-     ]
-    ]
+    "seams": [],
+    "text_cells": [],
+    "glyphs": 18,
+    "bubbles": []
+   },
+   {
+    "top": 3270.0,
+    "cut": 0,
+    "inside": 0,
+    "seams": [],
+    "text_cells": [],
+    "glyphs": 19,
+    "bubbles": []
    }
   ],
   "pan_px": 144.0,
@@ -2643,41 +2519,42 @@
  {
   "shot": 58,
   "img": "c2_060.jpg",
-  "status": "fixed",
+  "status": "choice",
   "score": 0,
   "faces_total": 2,
-  "face_ok": false,
+  "face_ok": true,
   "fixed_top": null,
   "violations": [
    {
-    "top": 3620.0,
-    "cut": 2,
-    "inside": 0,
+    "top": 2941.4,
+    "cut": 0,
+    "inside": 2,
     "seams": [],
     "text_cells": [],
-    "glyphs": 32,
+    "glyphs": 17,
     "bubbles": []
    },
    {
-    "top": 3710.0,
-    "cut": 2,
-    "inside": 0,
+    "top": 3031.4,
+    "cut": 0,
+    "inside": 2,
     "seams": [],
     "text_cells": [],
     "glyphs": 23,
     "bubbles": []
    },
    {
-    "top": 3800.0,
-    "cut": 2,
-    "inside": 0,
+    "top": 3121.4,
+    "cut": 0,
+    "inside": 2,
     "seams": [],
     "text_cells": [],
     "glyphs": 23,
     "bubbles": []
    }
   ],
-  "pan_px": 144.0
+  "pan_px": 144.0,
+  "alarm": "v5.1 三级保脸后静止/冲突 → 人工裁决"
  },
  {
   "shot": 59,
@@ -2725,34 +2602,34 @@
   "status": "choice",
   "score": 0,
   "faces_total": 2,
-  "face_ok": false,
+  "face_ok": true,
   "fixed_top": null,
   "violations": [
    {
-    "top": 2674.0,
+    "top": 2428.5,
     "cut": 0,
-    "inside": 0,
+    "inside": 1,
     "seams": [],
     "text_cells": [],
-    "glyphs": 9,
+    "glyphs": 29,
     "bubbles": []
    },
    {
-    "top": 2706.8,
+    "top": 2461.2,
     "cut": 0,
-    "inside": 0,
+    "inside": 1,
     "seams": [],
     "text_cells": [],
-    "glyphs": 8,
+    "glyphs": 26,
     "bubbles": []
    },
    {
-    "top": 2739.5,
+    "top": 2494.0,
     "cut": 0,
-    "inside": 0,
+    "inside": 1,
     "seams": [],
     "text_cells": [],
-    "glyphs": 4,
+    "glyphs": 26,
     "bubbles": []
    }
   ],
@@ -3102,30 +2979,30 @@
   "fixed_top": null,
   "violations": [
    {
-    "top": 4511.0,
+    "top": 3836.0,
     "cut": 0,
     "inside": 0,
     "seams": [],
     "text_cells": [],
-    "glyphs": 97,
+    "glyphs": 27,
     "bubbles": []
    },
    {
-    "top": 4601.0,
+    "top": 3926.0,
     "cut": 0,
     "inside": 0,
     "seams": [],
     "text_cells": [],
-    "glyphs": 101,
+    "glyphs": 38,
     "bubbles": []
    },
    {
-    "top": 4691.0,
+    "top": 4016.0,
     "cut": 0,
     "inside": 0,
     "seams": [],
     "text_cells": [],
-    "glyphs": 103,
+    "glyphs": 44,
     "bubbles": []
    }
   ],
@@ -3173,37 +3050,37 @@
  {
   "shot": 70,
   "img": "c2_067.jpg",
-  "status": "fixed",
+  "status": "clean",
   "score": 0,
   "faces_total": 1,
-  "face_ok": false,
+  "face_ok": true,
   "fixed_top": null,
   "violations": [
    {
-    "top": 2383.5,
-    "cut": 1,
-    "inside": 0,
+    "top": 1852.4,
+    "cut": 0,
+    "inside": 1,
+    "seams": [],
+    "text_cells": [],
+    "glyphs": 18,
+    "bubbles": []
+   },
+   {
+    "top": 1923.2,
+    "cut": 0,
+    "inside": 1,
     "seams": [],
     "text_cells": [],
     "glyphs": 13,
     "bubbles": []
    },
    {
-    "top": 2454.3,
-    "cut": 1,
-    "inside": 0,
-    "seams": [],
-    "text_cells": [],
-    "glyphs": 12,
-    "bubbles": []
-   },
-   {
-    "top": 2525.1,
+    "top": 1994.0,
     "cut": 0,
-    "inside": 0,
+    "inside": 1,
     "seams": [],
     "text_cells": [],
-    "glyphs": 12,
+    "glyphs": 9,
     "bubbles": []
    }
   ],
@@ -3251,142 +3128,38 @@
  {
   "shot": 72,
   "img": "c2_069.jpg",
-  "status": "fixed",
-  "score": 31,
+  "status": "clean",
+  "score": 0,
   "faces_total": 0,
   "face_ok": true,
   "fixed_top": null,
   "violations": [
    {
-    "top": 3519.0,
+    "top": 2844.0,
     "cut": 0,
     "inside": 0,
     "seams": [],
-    "text_cells": [
-     [
-      800,
-      997,
-      930,
-      1038,
-      9
-     ],
-     [
-      644,
-      1041,
-      782,
-      1115,
-      7
-     ],
-     [
-      510,
-      1130,
-      635,
-      1268,
-      8
-     ]
-    ],
-    "glyphs": 82,
-    "bubbles": [
-     [
-      0,
-      1023,
-      1800,
-      327,
-      44
-     ]
-    ]
+    "text_cells": [],
+    "glyphs": 56,
+    "bubbles": []
    },
    {
-    "top": 3609.0,
+    "top": 2934.0,
     "cut": 0,
     "inside": 0,
     "seams": [],
-    "text_cells": [
-     [
-      800,
-      907,
-      930,
-      948,
-      9
-     ],
-     [
-      1624,
-      1141,
-      1698,
-      1274,
-      10
-     ]
-    ],
-    "glyphs": 92,
-    "bubbles": [
-     [
-      0,
-      933,
-      1800,
-      417,
-      63
-     ]
-    ]
+    "text_cells": [],
+    "glyphs": 53,
+    "bubbles": []
    },
    {
-    "top": 3699.0,
+    "top": 3024.0,
     "cut": 0,
     "inside": 0,
     "seams": [],
-    "text_cells": [
-     [
-      800,
-      817,
-      930,
-      858,
-      9
-     ],
-     [
-      644,
-      861,
-      782,
-      935,
-      7
-     ],
-     [
-      491,
-      973,
-      611,
-      1116,
-      8
-     ],
-     [
-      433,
-      1128,
-      474,
-      1257,
-      9
-     ],
-     [
-      1666,
-      1124,
-      1721,
-      1265,
-      10
-     ],
-     [
-      1131,
-      1189,
-      1256,
-      1277,
-      7
-     ]
-    ],
-    "glyphs": 110,
-    "bubbles": [
-     [
-      0,
-      843,
-      1800,
-      507,
-      86
-     ]
-    ]
+    "text_cells": [],
+    "glyphs": 53,
+    "bubbles": []
    }
   ],
   "pan_px": 144.0
@@ -3491,44 +3264,52 @@
   "shot": 75,
   "img": "c2_071.jpg",
   "status": "choice",
-  "score": 2,
+  "score": 4,
   "faces_total": 0,
   "face_ok": true,
   "fixed_top": null,
   "violations": [
    {
-    "top": 4511.5,
-    "cut": 0,
-    "inside": 0,
-    "seams": [],
-    "text_cells": [],
-    "glyphs": 51,
-    "bubbles": []
-   },
-   {
-    "top": 4421.5,
-    "cut": 0,
-    "inside": 0,
-    "seams": [],
-    "text_cells": [],
-    "glyphs": 48,
-    "bubbles": []
-   },
-   {
-    "top": 4331.5,
+    "top": 3836.5,
     "cut": 0,
     "inside": 0,
     "seams": [],
     "text_cells": [
      [
       1446,
-      33,
+      528,
       1484,
-      135,
+      630,
       9
      ]
     ],
-    "glyphs": 31,
+    "glyphs": 29,
+    "bubbles": []
+   },
+   {
+    "top": 3746.5,
+    "cut": 0,
+    "inside": 0,
+    "seams": [],
+    "text_cells": [
+     [
+      1446,
+      646,
+      1484,
+      720,
+      8
+     ]
+    ],
+    "glyphs": 25,
+    "bubbles": []
+   },
+   {
+    "top": 3656.5,
+    "cut": 0,
+    "inside": 0,
+    "seams": [],
+    "text_cells": [],
+    "glyphs": 20,
     "bubbles": []
    }
   ],
@@ -3663,25 +3444,25 @@
   "fixed_top": null,
   "violations": [
    {
-    "top": 6303.6,
+    "top": 6031.8,
     "cut": 0,
     "inside": 0,
     "seams": [],
     "text_cells": [],
-    "glyphs": 4,
+    "glyphs": 6,
     "bubbles": []
    },
    {
-    "top": 6267.4,
+    "top": 5995.6,
     "cut": 0,
     "inside": 0,
     "seams": [],
     "text_cells": [],
-    "glyphs": 3,
+    "glyphs": 5,
     "bubbles": []
    },
    {
-    "top": 6231.1,
+    "top": 5959.3,
     "cut": 0,
     "inside": 0,
     "seams": [],
@@ -3702,7 +3483,7 @@
   "fixed_top": null,
   "violations": [
    {
-    "top": 2043.9,
+    "top": 2289.3,
     "cut": 0,
     "inside": 0,
     "seams": [],
@@ -3711,7 +3492,7 @@
     "bubbles": []
    },
    {
-    "top": 2076.6,
+    "top": 2322.1,
     "cut": 0,
     "inside": 0,
     "seams": [],
@@ -3720,7 +3501,7 @@
     "bubbles": []
    },
    {
-    "top": 2109.3,
+    "top": 2354.8,
     "cut": 0,
     "inside": 0,
     "seams": [],
@@ -3729,12 +3510,12 @@
     "bubbles": []
    }
   ],
-  "pan_px": 143.9
+  "pan_px": 144.1
  },
  {
   "shot": 81,
   "img": "c2_079.jpg",
-  "status": "choice",
+  "status": "risk",
   "score": 0,
   "faces_total": 1,
   "face_ok": false,
@@ -3768,14 +3549,12 @@
     "bubbles": []
    }
   ],
-  "pan_px": 0.0,
-  "giant_face": true,
-  "note": "巨脸特写：核心区(0.18-0.92fh)完整，允许裁发际线/下巴；整脸判据放宽"
+  "pan_px": 0.0
  },
  {
   "shot": 82,
   "img": "c2_079.jpg",
-  "status": "choice",
+  "status": "risk",
   "score": 0,
   "faces_total": 1,
   "face_ok": false,
@@ -3809,9 +3588,7 @@
     "bubbles": []
    }
   ],
-  "pan_px": 0.0,
-  "giant_face": true,
-  "note": "巨脸特写：核心区(0.18-0.92fh)完整，允许裁发际线/下巴；整脸判据放宽"
+  "pan_px": 0.0
  },
  {
   "shot": 83,

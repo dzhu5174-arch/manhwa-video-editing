@@ -185,26 +185,40 @@ def build_plan0(cfg):
         else:
             up = (phase % 2 == 0)    # 按「非 demo 镜序列」交替，demo 段后重起相位
             phase += 1
-        r2 = v2_pick_window(cfg, img, faces_b0.get(img, []), W2 / 2.0, blk0 + blk_h / 2.0)
-        if r2 is None:
-            s = max(V2["s_min"], CANVAS_W / float(W2)); H = CANVAS_H / s
-            x0 = max(0.0, (W2 - CANVAS_W / s) / 2.0)
-            center = blk0 + max(0.0, blk_h - H) / 2.0
-            ts = te = center
-            v2meta = dict(legal=False, why="no_legal_window")
+        # §1.2 v6：优先消费 slice_bands.py 產出的候选窗（同切片按 use_cnt 取相邻窗 = 阅读顺序）
+        cw = load_candidates(cfg).get(img) or {}
+        wins = sorted(cw.get("windows", []), key=lambda w: w["top_start"]) if cw else []
+        uc = use_cnt.get(fn, 0)
+        use_cnt[fn] = uc + 1
+        if wins:
+            wsel = dict(wins[min(uc, len(wins) - 1)])
+            if uc >= len(wins):            # 候选不足 → 同窗错窗 ±0.5H
+                Hw = CANVAS_H / wsel["s"]
+                d = 0.5 * Hw if uc % 2 == 0 else -0.5 * Hw
+                wsel["top_start"] += d
+                wsel["top_end"] += d
+            s = float(wsel["s"]); H = CANVAS_H / s; x0 = float(wsel["x0"])
+            ts, te = float(wsel["top_start"]), float(wsel["top_end"])
+            v2meta = dict(src="候选窗", mode=wsel.get("mode"), score=wsel.get("score"),
+                          band=wsel.get("band"), legal=True)
+            if uc >= len(wins):
+                v2meta["reuse_shift"] = True
         else:
-            s = r2["s"]; H = CANVAS_H / s; x0 = r2["x0"]
-            mid = r2["y_mid"]; trav = r2["trav"]
-            uc = use_cnt.get(fn, 0)
-            if uc and trav > 0:      # §3.4 同切片错窗 ±0.5H（带内）
-                mid = min(max(mid + (0.5 * H if uc % 2 == 1 else -0.5 * H), r2["band"][0] + H / 2),
-                          r2["band"][1] - H / 2)
-            ts = mid + trav / 2.0 if up else mid - trav / 2.0
-            te = mid - trav / 2.0 if up else mid + trav / 2.0
-            v2meta = dict(white_area=round(r2["white_area"], 4),
-                          face_ratio=(None if r2["face_ratio"] is None else round(r2["face_ratio"], 3)),
-                          legal=r2["legal"], band=r2["band"])
-        use_cnt[fn] = use_cnt.get(fn, 0) + 1
+            r2 = v2_pick_window(cfg, img, faces_b0.get(img, []), W2 / 2.0, blk0 + blk_h / 2.0)
+            if r2 is None:
+                s = max(V2["s_min"], CANVAS_W / float(W2)); H = CANVAS_H / s
+                x0 = max(0.0, (W2 - CANVAS_W / s) / 2.0)
+                center = blk0 + max(0.0, blk_h - H) / 2.0
+                ts = te = center
+                v2meta = dict(legal=False, why="no_legal_window", src="v2")
+            else:
+                s = r2["s"]; H = CANVAS_H / s; x0 = r2["x0"]
+                mid = r2["y_mid"]; trav = r2["trav"]
+                ts = mid + trav / 2.0 if up else mid - trav / 2.0
+                te = mid - trav / 2.0 if up else mid + trav / 2.0
+                v2meta = dict(white_area=round(r2["white_area"], 4),
+                              face_ratio=(None if r2["face_ratio"] is None else round(r2["face_ratio"], 3)),
+                              legal=r2["legal"], band=r2["band"], src="v2")
         plan.append(dict(shot=k, t0=round(t0, 3), t1=round(t1, 3), dur=round(t1 - t0, 3),
                          img=img, s=round(s, 5), x0=round(x0, 1),
                          top_start=round(ts, 1), top_end=round(te, 1),
@@ -383,6 +397,21 @@ def v2_pick_window(cfg, img, boxes, cx_hint, cy_hint, fullbody=False):
                 d_top=d_top, d_bot=d_bot, face_ok=bool(fok), legal=bool(ok))
 
 
+_CAND = {}
+
+
+def load_candidates(cfg):
+    """v6：slice_bands.py 产出的候选窗（切片→{bands,faces,windows[]}）"""
+    key = id(cfg)
+    if key not in _CAND:
+        p = os.path.join(work_dir(cfg), "切片窗口方案", "切片窗口方案.json")
+        try:
+            _CAND[key] = json.load(open(p, encoding="utf-8"))
+        except Exception:
+            _CAND[key] = {}
+    return _CAND[key]
+
+
 # ---------------- plan：人脸感知窗口（build_plan_v7 泛化） ----------------
 def step_plan(cfg):
     w = work_dir(cfg)
@@ -419,45 +448,15 @@ def step_plan(cfg):
             q.update(demo[bid])
             q["src"] = "demo"
         else:
-            # 裁窗法则 v2 · 单格化（2026-10-12 夜 用户定律）：内容带居中充满 + 上下死重出画 + 脸大
-            s5 = p["s"]
-            H5 = CANVAS_H / s5
-            cx5 = p["x0"] + (CANVAS_W / s5) / 2
-            cy5 = (p["top_start"] + p["top_end"]) / 2 + H5 / 2
-            boxes = faces.get(p["img"], [])
-            r2 = v2_pick_window(cfg, p["img"], boxes, cx5, cy5, fullbody=bool(p.get("fullbody_ok")))
-            if r2 is None:
-                s7 = max(S_MIN, s5)
-                q.update(s=s7, x0=round(p["x0"], 1),
-                         top_start=round(p["top_start"], 1), top_end=round(p["top_end"], 1))
-                q["src"] = "v2-NOLEGAL"
-                q["alarm"] = "v2_no_legal_window"
-                notes.append("shot%d v2 无合法窗（报警，禁静默 fallback）" % p["shot"])
-            else:
-                s7 = r2["s"]
-                H7 = CANVAS_H / s7
-                trav = r2["trav"]
-                mid = r2["y_mid"]
-                up = bool(p.get("up", i % 2 == 0))
-                uc2 = use_cnt2.get(p["img"], 0)
-                use_cnt2[p["img"]] = uc2 + 1
-                if uc2 and trav > 0:      # §3.4 同切片错窗 ±0.5H（带内）
-                    mid = min(max(mid + (0.5 * H7 if uc2 % 2 == 1 else -0.5 * H7),
-                                  r2["band"][0] + H7 / 2), r2["band"][1] - H7 / 2)
-                ts = mid + trav / 2.0 if up else mid - trav / 2.0
-                te = mid - trav / 2.0 if up else mid + trav / 2.0
-                q.update(s=s7, x0=round(r2["x0"], 1), top_start=round(ts, 1), top_end=round(te, 1))
-                q["src"] = "v2"
-                q["v2"] = dict(white_area=round(r2["white_area"], 4),
-                               face_ratio=(None if r2["face_ratio"] is None else round(r2["face_ratio"], 3)),
-                               d_top=round(r2["d_top"], 3), d_bot=round(r2["d_bot"], 3),
-                               band=r2["band"], legal=bool(r2["legal"]))
-                if not r2["legal"]:
-                    q["alarm"] = "v2_window_not_legal"
-                elif abs(te - ts) * s7 < 60.0:
-                    q["alarm"] = "v2_small_travel"
-                if r2.get("giant"):
-                    q["giant_face"] = True
+            # §1.2 v6：窗口直接取 plan0（已由候选窗 / v2 定稿），step_plan 不再内部重算
+            s7 = p["s"]
+            q.update(s=s7, x0=p["x0"], top_start=p["top_start"], top_end=p["top_end"])
+            v2m = p.get("v2") or {}
+            q["src"] = v2m.get("src", "plan0")
+            if v2m:
+                q["v2"] = v2m
+            if p.get("alarm") or v2m.get("legal") is False:
+                q["alarm"] = "v2_window_not_legal"
         q["H"] = int(round(CANVAS_H / q["s"]))
         q["static"] = abs(q["top_end"] - q["top_start"]) * q["s"] < STATIC_MIN_PX
         q["dirn"] = "static" if q["static"] else ("up" if q["top_end"] < q["top_start"] else "down")
