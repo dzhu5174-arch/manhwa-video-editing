@@ -56,19 +56,38 @@ def dead_mask(img):
     for i in range(1, n):
         if stats[i, cv2.CC_STAT_AREA] > 0.03 * h * w:
             dead[lab == i] = 1
+    # 暗部平色大域（暗天空/暗块）——v4：雨夜暗块不再算内容
+    dk = ((var < 22) & (g <= 110)).astype(np.uint8)
+    dk = cv2.morphologyEx(dk, cv2.MORPH_CLOSE, np.ones((21, 21), np.uint8))
+    n, lab, stats, _ = cv2.connectedComponentsWithStats(dk, 8)
+    for i in range(1, n):
+        if stats[i, cv2.CC_STAT_AREA] > 0.025 * h * w and max(stats[i, cv2.CC_STAT_WIDTH], stats[i, cv2.CC_STAT_HEIGHT]) > 0.10 * max(h, w):
+            dead[lab == i] = 1
     return dead.astype(np.float32), small.shape[0], small.shape[1]
 
 def text_page_ratio(small, ys, xs, hs, ws):
-    """主成分占比：文字页=许多同尺寸笔画（占比低），插画=一个大主体（占比高）。"""
+    """文字帧判别（双极性）：亮底墨字（主成分占比低）或 暗底白笔画（白色小连通域多）。
+    返回 1.0=非文字，<0.35=文字帧。"""
     patch = small[ys:ys+hs, xs:xs+ws]
     g = cv2.cvtColor(patch, cv2.COLOR_BGR2GRAY)
+    # 极性A：亮底，墨字为许多小笔画
     ink = (g < 225).astype(np.uint8)
     total = int(ink.sum())
-    if total < 0.02 * hs * ws: return 1.0
-    n, lab, stats, _ = cv2.connectedComponentsWithStats(ink, 8)
-    if n <= 2: return 1.0
-    areas = sorted((stats[i, cv2.CC_STAT_AREA] for i in range(1, n)), reverse=True)
-    return areas[0] / total
+    if total >= 0.02 * hs * ws:
+        n, lab, stats, _ = cv2.connectedComponentsWithStats(ink, 8)
+        if n > 2:
+            areas = sorted((stats[i, cv2.CC_STAT_AREA] for i in range(1, n)), reverse=True)
+            r = areas[0] / total
+            if r < 0.35: return r
+    # 极性B：暗底，白字为许多小白笔画（v6 §1.1：白连通域>10、单块<2% patch、白占比 3–25%）
+    wh = (g > 205).astype(np.uint8)
+    wt = int(wh.sum())
+    if 0.03 * hs * ws < wt < 0.25 * hs * ws:
+        n, lab, stats, _ = cv2.connectedComponentsWithStats(wh, 8)
+        comps = [stats[i, cv2.CC_STAT_AREA] for i in range(1, n) if stats[i, cv2.CC_STAT_AREA] > 4]
+        if len(comps) > 10 and max(comps) < 0.02 * hs * ws:
+            return 0.2
+    return 1.0
 
 def bands_of(dead, sh):
     row_content = 1.0 - dead.mean(axis=1)
@@ -89,7 +108,7 @@ def bands_of(dead, sh):
         else: merged.append(b)
     return merged
 
-def search_windows(bt, bb, dead, sh, faces_in, H, SS=4, small=None):
+def search_windows(bt, bb, dead, sh, faces_in, H, SS=4, small=None, small_gray=None, lap_mean=None):
     """滑动+变焦打分（全原生域）。返回按 top 排序的窗口列表。"""
     cands = []
     s_list = [0.9, 1.1, 1.3, 1.6, 1.9, 2.2, 2.5]
@@ -116,10 +135,27 @@ def search_windows(bt, bb, dead, sh, faces_in, H, SS=4, small=None):
                 patch = dead[ysm:ysm + hsm, xsm:xsm + wsm]
                 if patch.size == 0: continue
                 fill = float(1.0 - patch.mean())
+                # v6 §1.1：细带窗惩罚——窗高超出内容带越多，说明窗口被迫吃带外死重
+                fill *= (1.0 - 0.5 * max(0.0, Hw - (bb - bt)) / max(1.0, Hw))
                 if small is not None:
                     tpr = text_page_ratio(small, ysm, xsm, hsm, wsm)
                     if tpr < 0.35: fill *= 0.25        # 文字页重罚
                 fb = 0.0
+                if faces_in and small_gray is not None:
+                    f0 = max(faces_in, key=lambda f: f[3])
+                    fy0, fx0c = int(f0[1] / SS), int(f0[0] / SS)
+                    fh0, fw0 = max(1, int(f0[3] / SS)), max(1, int(f0[2] / SS))
+                    fb_area = small[fy0:fy0 + fh0, fx0c:fx0c + fw0]
+                    if fb_area.size and fb_area.size == fh0 * fw0:
+                        if float(cv2.cvtColor(fb_area, cv2.COLOR_BGR2GRAY).mean()) < 45:
+                            faces_in = []      # 脸框落在暗区 = 误检
+                        else:
+                            hsv = cv2.cvtColor(fb_area, cv2.COLOR_BGR2HSV)
+                            sat = hsv[:, :, 1] > 60
+                            if sat.sum() > 0.15 * fh0 * fw0:
+                                hues = np.histogram(hsv[:, :, 0][sat], bins=18, range=(0, 180))[0]
+                                if (hues > 0.08 * sat.sum()).sum() < 3:
+                                    faces_in = []   # 单色相 = 草地/天空误检，非脸
                 if faces_in:
                     f = max(faces_in, key=lambda f: f[3])
                     fx, fy, fw2, fh2 = f[:4]
@@ -135,9 +171,11 @@ def search_windows(bt, bb, dead, sh, faces_in, H, SS=4, small=None):
         if any(not (top + Hw < t or top > t + CH / ss) for _, ss, _, t, _ in chosen): continue
         chosen.append((sc, s, x0, top, mode))
         if len(chosen) >= 5: break
-    return [dict(s=round(s, 4), x0=round(x0, 1), top_start=round(top, 1),
-                 top_end=round(top + TRAVEL / s, 1), mode=mode, band=[bt, bb],
-                 score=round(sc, 3)) for sc, s, x0, top, mode in sorted(chosen, key=lambda c: c[3])]
+    out = [dict(s=round(s, 4), x0=round(x0, 1), top_start=round(top, 1),
+                top_end=round(top + TRAVEL / s, 1), mode=mode, band=[bt, bb],
+                score=round(sc, 3)) for sc, s, x0, top, mode in chosen]
+    out.sort(key=lambda w: (0 if w["mode"] == "face" else 1, -w["score"]))  # 有脸格默认脸窗
+    return out
 
 def main():
     faces = json.load(open(FACES, encoding="utf-8"))
@@ -154,11 +192,14 @@ def main():
             fl = yunet(img, 0.35)
             if fl: redone.append(tag)
         dead, sh, sw = dead_mask(img)
+        small = cv2.resize(img, (sw, sh), interpolation=cv2.INTER_AREA)
+        small_gray = cv2.cvtColor(small, cv2.COLOR_BGR2GRAY)
+        lap_mean = cv2.blur(np.abs(cv2.Laplacian(small_gray, cv2.CV_32F)), (9, 9))
         bands = bands_of(dead, sh)
         wins = []
         for (bt, bb) in bands:
             fin = [f for f in fl if f[1] + f[3] > bt and f[1] < bb]
-            wins += search_windows(bt, bb, dead, sh, fin, H)
+            wins += search_windows(bt, bb, dead, sh, fin, H, small=small, small_gray=small_gray, lap_mean=lap_mean)
         wins.sort(key=lambda w: w["top_start"])
         result[tag] = dict(h=H, bands=bands, faces=fl, windows=wins)
         scale = 240.0 / W_SLICE

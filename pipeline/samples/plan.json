@@ -8,25 +8,28 @@
   "block": 0,
   "s": 0.8,
   "x0": 0.0,
-  "top_start": 9147.5,
-  "top_end": 9147.5,
-  "src": "v2",
+  "top_start": 8630.0,
+  "top_end": 8810.0,
+  "src": "candidate",
   "v2": {
-   "white_area": 0.1399,
-   "face_ratio": 0.55,
-   "legal": false,
+   "src": "candidate",
+   "mode": "face",
+   "score": 1.0,
    "band": [
-    5801,
-    10063,
-    0,
-    1799
+    5392,
+    10316
    ],
-   "src": "v2"
+   "legal": true,
+   "cand_ref": {
+    "key": "c2_036",
+    "idx": 0,
+    "shift_px": 0.0,
+    "n_cand": 10
+   }
   },
-  "alarm": "v2_window_not_legal",
   "H": 1350,
-  "static": true,
-  "dirn": "static",
+  "static": false,
+  "dirn": "down",
   "text": "勇者刚落地就反抢了一伙盗贼，还嫌他们穷。"
  },
  {
@@ -36,24 +39,28 @@
   "dur": 2.065,
   "img": "c2_078.jpg",
   "block": 1,
-  "s": 2.2,
-  "x0": 1145.5,
-  "top_start": 2289.3,
-  "top_end": 2354.8,
-  "src": "v2",
+  "s": 1.3,
+  "x0": 0.0,
+  "top_start": 3132.0,
+  "top_end": 3242.8,
+  "src": "candidate",
   "v2": {
-   "white_area": 0.0,
-   "face_ratio": null,
-   "legal": true,
+   "src": "candidate",
+   "mode": "search",
+   "score": 1.0,
    "band": [
-    832,
-    4302,
-    1536,
-    1540
+    2352,
+    4164
    ],
-   "src": "v2"
+   "legal": true,
+   "cand_ref": {
+    "key": "c2_078",
+    "idx": 0,
+    "shift_px": 0.0,
+    "n_cand": 4
+   }
   },
-  "H": 491,
+  "H": 831,
   "static": false,
   "dirn": "down",
   "text": "当天夜里，又有人带着杀意摸到他"
@@ -65,26 +72,30 @@
   "dur": 2.065,
   "img": "c2_078.jpg",
   "block": 1,
-  "s": 2.2,
-  "x0": 1145.5,
-  "top_start": 2354.8,
-  "top_end": 2289.3,
-  "src": "v2",
+  "s": 2.5,
+  "x0": 0.0,
+  "top_start": 2652.0,
+  "top_end": 2709.6,
+  "src": "candidate",
   "v2": {
-   "white_area": 0.0,
-   "face_ratio": null,
-   "legal": true,
+   "src": "candidate",
+   "mode": "search",
+   "score": 1.0,
    "band": [
-    832,
-    4302,
-    1536,
-    1540
+    2352,
+    4164
    ],
-   "src": "v2"
+   "legal": true,
+   "cand_ref": {
+    "key": "c2_078",
+    "idx": 1,
+    "shift_px": 0.0,
+    "n_cand": 4
+   }
   },
-  "H": 491,
+  "H": 432,
   "static": false,
-  "dirn": "up",
+  "dirn": "down",
   "text": "背后——来人自称帝国一级公务员。"
  },
  {
@@ -94,24 +105,28 @@
   "dur": 1.45,
   "img": "c2_004.jpg",
   "block": 2,
-  "s": 0.8,
-  "x0": 0.0,
-  "top_start": 3305.0,
-  "top_end": 3485.0,
-  "src": "v2",
+  "s": 2.6,
+  "x0": 340.6,
+  "top_start": 3724.0,
+  "top_end": 3779.4,
+  "src": "candidate",
   "v2": {
-   "white_area": 0.0043,
-   "face_ratio": null,
-   "legal": true,
+   "src": "candidate",
+   "mode": "face",
+   "score": 1.0,
    "band": [
-    3063,
-    5076,
-    0,
-    1799
+    1384,
+    5076
    ],
-   "src": "v2"
+   "legal": true,
+   "cand_ref": {
+    "key": "c2_004",
+    "idx": 0,
+    "shift_px": 0.0,
+    "n_cand": 5
+   }
   },
-  "H": 1350,
+  "H": 415,
   "static": false,
   "dirn": "down",
   "text": "时间回到他刚落地的那一刻。"
@@ -123,26 +138,30 @@
   "dur": 2.695,
   "img": "c2_001.jpg",
   "block": 3,
-  "s": 0.8,
-  "x0": 0.0,
-  "top_start": 4008.8,
-  "top_end": 3828.8,
-  "src": "v2",
+  "s": 2.2,
+  "x0": 572.7,
+  "top_start": 2748.0,
+  "top_end": 2813.5,
+  "src": "candidate",
   "v2": {
-   "white_area": 0.0015,
-   "face_ratio": null,
-   "legal": true,
+   "src": "candidate",
+   "mode": "search",
+   "score": 1.0,
    "band": [
-    0,
-    7747,
-    0,
-    1799
+    2688,
+    6552
    ],
-   "src": "v2"
+   "legal": true,
+   "cand_ref": {
+    "key": "c2_001",
+    "idx": 0,
+    "shift_px": 0.0,
+    "n_cand": 7
+   }
   },
-  "H": 1350,
+  "H": 491,
   "static": false,
-  "dirn": "up",
+  "dirn": "down",
   "text": "魔王临死前问他：「你以为魔王一死，一切"
  },
  {
@@ -152,24 +171,28 @@
   "dur": 2.695,
   "img": "c2_001.jpg",
   "block": 3,
-  "s": 0.8,
+  "s": 0.9,
   "x0": 0.0,
-  "top_start": 3828.8,
-  "top_end": 4008.8,
-  "src": "v2",
+  "top_start": 3348.0,
+  "top_end": 3508.0,
+  "src": "candidate",
   "v2": {
-   "white_area": 0.0015,
-   "face_ratio": null,
-   "legal": true,
+   "src": "candidate",
+   "mode": "search",
+   "score": 1.0,
    "band": [
-    0,
-    7747,
-    0,
-    1799
+    2688,
+    6552
    ],
-   "src": "v2"
+   "legal": true,
+   "cand_ref": {
+    "key": "c2_001",
+    "idx": 1,
+    "shift_px": 0.0,
+    "n_cand": 7
+   }
   },
-  "H": 1350,
+  "H": 1200,
   "static": false,
   "dirn": "down",
   "text": "就结束了吗？你真的这么以为吗，勇者？」"
@@ -181,26 +204,30 @@
   "dur": 3.03,
   "img": "c2_002.jpg",
   "block": 4,
-  "s": 0.8,
-  "x0": 0.0,
-  "top_start": 660.0,
-  "top_end": 480.0,
-  "src": "v2",
+  "s": 2.5,
+  "x0": 1224.0,
+  "top_start": 956.0,
+  "top_end": 1013.6,
+  "src": "candidate",
   "v2": {
-   "white_area": 0.0,
-   "face_ratio": null,
-   "legal": true,
+   "src": "candidate",
+   "mode": "search",
+   "score": 0.997,
    "band": [
-    0,
-    3674,
-    0,
-    1799
+    896,
+    2872
    ],
-   "src": "v2"
+   "legal": true,
+   "cand_ref": {
+    "key": "c2_002",
+    "idx": 0,
+    "shift_px": 0.0,
+    "n_cand": 4
+   }
   },
-  "H": 1350,
+  "H": 432,
   "static": false,
-  "dirn": "up",
+  "dirn": "down",
   "text": "系统跟着宣告：「勇者拉昂，获得《神力》。」"
  },
  {
@@ -212,22 +239,25 @@
   "block": 5,
   "s": 0.8,
   "x0": 0.0,
-  "top_start": 2618.0,
-  "top_end": 2798.0,
-  "src": "v2",
+  "top_start": 2656.0,
+  "top_end": 2836.0,
+  "src": "candidate",
   "v2": {
-   "white_area": 0.0017,
-   "face_ratio": 0.613,
-   "legal": false,
+   "src": "candidate",
+   "mode": "face",
+   "score": 1.15,
    "band": [
-    84,
-    4998,
-    0,
-    1799
+    676,
+    5332
    ],
-   "src": "v2"
+   "legal": true,
+   "cand_ref": {
+    "key": "c2_003",
+    "idx": 0,
+    "shift_px": 0.0,
+    "n_cand": 5
+   }
   },
-  "alarm": "v2_window_not_legal",
   "H": 1350,
   "static": false,
   "dirn": "down",
@@ -240,27 +270,30 @@
   "dur": 2.03,
   "img": "c2_003.jpg",
   "block": 5,
-  "s": 0.8,
-  "x0": 0.0,
-  "top_start": 2798.0,
-  "top_end": 2618.0,
-  "src": "v2",
+  "s": 2.2,
+  "x0": 605.2,
+  "top_start": 856.0,
+  "top_end": 921.5,
+  "src": "candidate",
   "v2": {
-   "white_area": 0.0017,
-   "face_ratio": 0.613,
-   "legal": false,
+   "src": "candidate",
+   "mode": "search",
+   "score": 1.0,
    "band": [
-    84,
-    4998,
-    0,
-    1799
+    676,
+    5332
    ],
-   "src": "v2"
+   "legal": true,
+   "cand_ref": {
+    "key": "c2_003",
+    "idx": 1,
+    "shift_px": 0.0,
+    "n_cand": 5
+   }
   },
-  "alarm": "v2_window_not_legal",
-  "H": 1350,
+  "H": 491,
   "static": false,
-  "dirn": "up",
+  "dirn": "down",
   "text": "开口就是一句：「啊，妈的。」"
  },
  {
@@ -270,27 +303,30 @@
   "dur": 2.09,
   "img": "c2_005.jpg",
   "block": 6,
-  "s": 1.89474,
-  "x0": 226.5,
-  "top_start": 2034.0,
-  "top_end": 2034.0,
-  "src": "v2",
+  "s": 1.3,
+  "x0": 52.7,
+  "top_start": 2076.0,
+  "top_end": 2186.8,
+  "src": "candidate",
   "v2": {
-   "white_area": 0.0032,
-   "face_ratio": 1.426,
-   "legal": false,
+   "src": "candidate",
+   "mode": "search",
+   "score": 1.0,
    "band": [
-    3473,
-    4118,
-    0,
-    1799
+    1696,
+    4304
    ],
-   "src": "v2"
+   "legal": true,
+   "cand_ref": {
+    "key": "c2_005",
+    "idx": 0,
+    "shift_px": 0.0,
+    "n_cand": 3
+   }
   },
-  "alarm": "v2_window_not_legal",
-  "H": 570,
-  "static": true,
-  "dirn": "static",
+  "H": 831,
+  "static": false,
+  "dirn": "down",
   "text": "他清点下来：「至少我没光着"
  },
  {
@@ -300,27 +336,30 @@
   "dur": 2.09,
   "img": "c2_005.jpg",
   "block": 6,
-  "s": 1.89474,
-  "x0": 226.5,
-  "top_start": 2034.0,
-  "top_end": 2034.0,
-  "src": "v2",
+  "s": 0.8,
+  "x0": 0.0,
+  "top_start": 1836.0,
+  "top_end": 2016.0,
+  "src": "candidate",
   "v2": {
-   "white_area": 0.0032,
-   "face_ratio": 1.426,
-   "legal": false,
+   "src": "candidate",
+   "mode": "face",
+   "score": 1.057,
    "band": [
-    3473,
-    4118,
-    0,
-    1799
+    1696,
+    4304
    ],
-   "src": "v2"
+   "legal": true,
+   "cand_ref": {
+    "key": "c2_005",
+    "idx": 1,
+    "shift_px": 0.0,
+    "n_cand": 3
+   }
   },
-  "alarm": "v2_window_not_legal",
-  "H": 570,
-  "static": true,
-  "dirn": "static",
+  "H": 1350,
+  "static": false,
+  "dirn": "down",
   "text": "。没武器，但有我需要的盾。」"
  },
  {
@@ -330,24 +369,28 @@
   "dur": 3.24,
   "img": "c2_006.jpg",
   "block": 7,
-  "s": 2.2,
-  "x0": 545.7,
-  "top_start": 2191.5,
-  "top_end": 2257.0,
-  "src": "v2",
+  "s": 1.6028,
+  "x0": 423.8,
+  "top_start": 2302.0,
+  "top_end": 2391.8,
+  "src": "candidate",
   "v2": {
-   "white_area": 0.0074,
-   "face_ratio": 0.576,
-   "legal": true,
+   "src": "candidate",
+   "mode": "face",
+   "score": 1.0,
    "band": [
-    1937,
-    6713,
-    0,
-    632
+    1712,
+    4304
    ],
-   "src": "v2"
+   "legal": true,
+   "cand_ref": {
+    "key": "c2_006",
+    "idx": 0,
+    "shift_px": 0.0,
+    "n_cand": 8
+   }
   },
-  "H": 491,
+  "H": 674,
   "static": false,
   "dirn": "down",
   "text": "至于圣剑——「我现在不需要，反正它本来也不适合我。」"
@@ -359,26 +402,30 @@
   "dur": 2.8,
   "img": "c2_007.jpg",
   "block": 8,
-  "s": 0.8,
-  "x0": 0.0,
-  "top_start": 3851.0,
-  "top_end": 3671.0,
-  "src": "v2",
+  "s": 1.8363,
+  "x0": 547.7,
+  "top_start": 4040.0,
+  "top_end": 4118.4,
+  "src": "candidate",
   "v2": {
-   "white_area": 0.0,
-   "face_ratio": null,
-   "legal": true,
+   "src": "candidate",
+   "mode": "face",
+   "score": 1.0,
    "band": [
-    0,
-    8871,
-    0,
-    1799
+    3380,
+    8248
    ],
-   "src": "v2"
+   "legal": true,
+   "cand_ref": {
+    "key": "c2_007",
+    "idx": 0,
+    "shift_px": 0.0,
+    "n_cand": 7
+   }
   },
-  "H": 1350,
+  "H": 588,
   "static": false,
-  "dirn": "up",
+  "dirn": "down",
   "text": "一提圣剑，就得回到第一世界那场雨夜死战。"
  },
  {
@@ -388,25 +435,28 @@
   "dur": 2.815,
   "img": "c2_008.jpg",
   "block": 9,
-  "s": 0.8,
-  "x0": 0.0,
-  "top_start": 2025.0,
-  "top_end": 2205.0,
-  "src": "v2",
+  "s": 1.6,
+  "x0": 229.5,
+  "top_start": 3550.0,
+  "top_end": 3640.0,
+  "src": "candidate",
   "v2": {
-   "white_area": 0.0262,
-   "face_ratio": 0.8,
-   "legal": false,
+   "src": "candidate",
+   "mode": "search",
+   "score": 1.0,
    "band": [
-    0,
-    5531,
-    0,
-    1799
+    720,
+    5272
    ],
-   "src": "v2"
+   "legal": true,
+   "cand_ref": {
+    "key": "c2_008",
+    "idx": 0,
+    "shift_px": 0.0,
+    "n_cand": 5
+   }
   },
-  "alarm": "v2_window_not_legal",
-  "H": 1350,
+  "H": 675,
   "static": false,
   "dirn": "down",
   "text": "蜘蛛模样的魔女先开了口：「多美的景象啊，"
@@ -418,27 +468,30 @@
   "dur": 2.815,
   "img": "c2_008.jpg",
   "block": 9,
-  "s": 0.8,
-  "x0": 0.0,
-  "top_start": 2205.0,
-  "top_end": 2025.0,
-  "src": "v2",
+  "s": 2.5,
+  "x0": 391.5,
+  "top_start": 3660.0,
+  "top_end": 3717.6,
+  "src": "candidate",
   "v2": {
-   "white_area": 0.0262,
-   "face_ratio": 0.8,
-   "legal": false,
+   "src": "candidate",
+   "mode": "search",
+   "score": 0.975,
    "band": [
-    0,
-    5531,
-    0,
-    1799
+    720,
+    5272
    ],
-   "src": "v2"
+   "legal": true,
+   "cand_ref": {
+    "key": "c2_008",
+    "idx": 1,
+    "shift_px": 0.0,
+    "n_cand": 5
+   }
   },
-  "alarm": "v2_window_not_legal",
-  "H": 1350,
+  "H": 432,
   "static": false,
-  "dirn": "up",
+  "dirn": "down",
   "text": "勇者一行。很快，你们的尸骨就会埋在这里。」"
  },
  {
@@ -590,25 +643,28 @@
   "dur": 3.5,
   "img": "c2_016.jpg",
   "block": 16,
-  "s": 1.6701,
-  "x0": 55.9,
-  "top_start": 4305.0,
-  "top_end": 4391.2,
-  "src": "v2",
+  "s": 1.5588,
+  "x0": 25.1,
+  "top_start": 4650.0,
+  "top_end": 4742.4,
+  "src": "candidate",
   "v2": {
-   "white_area": 0.1559,
-   "face_ratio": 0.45,
-   "legal": false,
+   "src": "candidate",
+   "mode": "face",
+   "score": 1.0,
    "band": [
-    0,
-    9303,
-    0,
-    1799
+    4408,
+    8020
    ],
-   "src": "v2"
+   "legal": true,
+   "cand_ref": {
+    "key": "c2_016",
+    "idx": 0,
+    "shift_px": 0.0,
+    "n_cand": 10
+   }
   },
-  "alarm": "v2_window_not_legal",
-  "H": 647,
+  "H": 693,
   "static": false,
   "dirn": "down",
   "text": "卡因乐得不行：「这又爽又沉的手感。就是这个。」"
@@ -620,27 +676,30 @@
   "dur": 2.81,
   "img": "c2_018.jpg",
   "block": 17,
-  "s": 0.8,
-  "x0": 0.0,
-  "top_start": 1101.2,
-  "top_end": 921.2,
-  "src": "v2",
+  "s": 1.9,
+  "x0": 1042.1,
+  "top_start": 1060.0,
+  "top_end": 1135.8,
+  "src": "candidate",
   "v2": {
-   "white_area": 0.0451,
-   "face_ratio": null,
-   "legal": false,
+   "src": "candidate",
+   "mode": "search",
+   "score": 1.0,
    "band": [
-    404,
-    3961,
-    0,
-    1799
+    520,
+    2668
    ],
-   "src": "v2"
+   "legal": true,
+   "cand_ref": {
+    "key": "c2_018",
+    "idx": 0,
+    "shift_px": 0.0,
+    "n_cand": 4
+   }
   },
-  "alarm": "v2_window_not_legal",
-  "H": 1350,
+  "H": 568,
   "static": false,
-  "dirn": "up",
+  "dirn": "down",
   "text": "他直接把圣剑当箭射了出去，魔物根本扛不住。"
  },
  {
@@ -650,24 +709,28 @@
   "dur": 2.87,
   "img": "c2_021.jpg",
   "block": 18,
-  "s": 1.36517,
-  "x0": 745.2,
-  "top_start": 2578.9,
-  "top_end": 2684.4,
-  "src": "v2",
+  "s": 1.1,
+  "x0": 0.0,
+  "top_start": 2396.0,
+  "top_end": 2526.9,
+  "src": "candidate",
   "v2": {
-   "white_area": 0.0007,
-   "face_ratio": 0.45,
-   "legal": true,
+   "src": "candidate",
+   "mode": "search",
+   "score": 1.0,
    "band": [
-    0,
-    5871,
-    0,
-    1799
+    1136,
+    5444
    ],
-   "src": "v2"
+   "legal": true,
+   "cand_ref": {
+    "key": "c2_021",
+    "idx": 0,
+    "shift_px": 0.0,
+    "n_cand": 6
+   }
   },
-  "H": 791,
+  "H": 982,
   "static": false,
   "dirn": "down",
   "text": "没错，圣剑确实很厉害。可对用不了魔力和"
@@ -679,26 +742,30 @@
   "dur": 2.87,
   "img": "c2_021.jpg",
   "block": 18,
-  "s": 1.36517,
-  "x0": 745.2,
-  "top_start": 2684.4,
-  "top_end": 2578.9,
-  "src": "v2",
+  "s": 1.1,
+  "x0": 0.0,
+  "top_start": 2376.0,
+  "top_end": 2506.9,
+  "src": "candidate",
   "v2": {
-   "white_area": 0.0007,
-   "face_ratio": 0.45,
-   "legal": true,
+   "src": "candidate",
+   "mode": "search",
+   "score": 1.0,
    "band": [
-    0,
-    5871,
-    0,
-    1799
+    1136,
+    5444
    ],
-   "src": "v2"
+   "legal": true,
+   "cand_ref": {
+    "key": "c2_021",
+    "idx": 1,
+    "shift_px": 0.0,
+    "n_cand": 6
+   }
   },
-  "H": 791,
+  "H": 982,
   "static": false,
-  "dirn": "up",
+  "dirn": "down",
   "text": "神力的拉昂来说，它就只是一把结实的剑。"
  },
  {
@@ -708,25 +775,28 @@
   "dur": 1.85,
   "img": "c2_022.jpg",
   "block": 19,
-  "s": 1.01408,
-  "x0": 209.0,
-  "top_start": 1560.0,
-  "top_end": 1702.0,
-  "src": "v2",
+  "s": 1.9,
+  "x0": 540.1,
+  "top_start": 756.0,
+  "top_end": 831.8,
+  "src": "candidate",
   "v2": {
-   "white_area": 0.035,
-   "face_ratio": 1.125,
-   "legal": false,
+   "src": "candidate",
+   "mode": "search",
+   "score": 1.0,
    "band": [
-    0,
-    3399,
-    0,
-    1419
+    696,
+    3540
    ],
-   "src": "v2"
+   "legal": true,
+   "cand_ref": {
+    "key": "c2_022",
+    "idx": 0,
+    "shift_px": 0.0,
+    "n_cand": 4
+   }
   },
-  "alarm": "v2_window_not_legal",
-  "H": 1065,
+  "H": 568,
   "static": false,
   "dirn": "down",
   "text": "回到现在——神力到手了，但"
@@ -738,27 +808,30 @@
   "dur": 1.85,
   "img": "c2_022.jpg",
   "block": 19,
-  "s": 1.01408,
-  "x0": 209.0,
-  "top_start": 1702.0,
-  "top_end": 1560.0,
-  "src": "v2",
+  "s": 0.8,
+  "x0": 0.0,
+  "top_start": 1460.0,
+  "top_end": 1640.0,
+  "src": "candidate",
   "v2": {
-   "white_area": 0.035,
-   "face_ratio": 1.125,
-   "legal": false,
+   "src": "candidate",
+   "mode": "face",
+   "score": 1.118,
    "band": [
-    0,
-    3399,
-    0,
-    1419
+    696,
+    3540
    ],
-   "src": "v2"
+   "legal": true,
+   "cand_ref": {
+    "key": "c2_022",
+    "idx": 1,
+    "shift_px": 0.0,
+    "n_cand": 4
+   }
   },
-  "alarm": "v2_window_not_legal",
-  "H": 1065,
+  "H": 1350,
   "static": false,
-  "dirn": "up",
+  "dirn": "down",
   "text": "拉昂不觉得自己现在就能用。"
  },
  {
@@ -768,25 +841,28 @@
   "dur": 2.8,
   "img": "c2_023.jpg",
   "block": 20,
-  "s": 0.8,
-  "x0": 0.0,
-  "top_start": 2170.0,
-  "top_end": 2350.0,
-  "src": "v2",
+  "s": 2.2,
+  "x0": 1145.5,
+  "top_start": 1468.0,
+  "top_end": 1533.5,
+  "src": "candidate",
   "v2": {
-   "white_area": 0.0021,
-   "face_ratio": null,
-   "legal": false,
+   "src": "candidate",
+   "mode": "search",
+   "score": 1.0,
    "band": [
-    1708,
-    3842,
-    0,
-    1799
+    1408,
+    3988
    ],
-   "src": "v2"
+   "legal": true,
+   "cand_ref": {
+    "key": "c2_023",
+    "idx": 0,
+    "shift_px": 0.0,
+    "n_cand": 5
+   }
   },
-  "alarm": "v2_window_not_legal",
-  "H": 1350,
+  "H": 491,
   "static": false,
   "dirn": "down",
   "text": "可一想到那疯子打圣剑的主意，他就火大。"
@@ -798,27 +874,30 @@
   "dur": 2.23,
   "img": "c2_024.jpg",
   "block": 21,
-  "s": 1.5,
-  "x0": 803.0,
-  "top_start": 3298.4,
-  "top_end": 3298.4,
-  "src": "v2",
+  "s": 1.3,
+  "x0": 692.3,
+  "top_start": 3472.0,
+  "top_end": 3582.8,
+  "src": "candidate",
   "v2": {
-   "white_area": 0.0044,
-   "face_ratio": 1.928,
-   "legal": false,
+   "src": "candidate",
+   "mode": "search",
+   "score": 1.0,
    "band": [
-    624,
-    5534,
-    0,
-    959
+    772,
+    4708
    ],
-   "src": "v2"
+   "legal": true,
+   "cand_ref": {
+    "key": "c2_024",
+    "idx": 0,
+    "shift_px": 0.0,
+    "n_cand": 4
+   }
   },
-  "alarm": "v2_window_not_legal",
-  "H": 720,
-  "static": true,
-  "dirn": "static",
+  "H": 831,
+  "static": false,
+  "dirn": "down",
   "text": "突然，一伙盗贼围了上来。盗"
  },
  {
@@ -828,27 +907,30 @@
   "dur": 2.23,
   "img": "c2_024.jpg",
   "block": 21,
-  "s": 1.5,
-  "x0": 803.0,
-  "top_start": 3298.4,
-  "top_end": 3298.4,
-  "src": "v2",
+  "s": 2.5,
+  "x0": 995.0,
+  "top_start": 4312.0,
+  "top_end": 4369.6,
+  "src": "candidate",
   "v2": {
-   "white_area": 0.0044,
-   "face_ratio": 1.928,
-   "legal": false,
+   "src": "candidate",
+   "mode": "search",
+   "score": 0.984,
    "band": [
-    624,
-    5534,
-    0,
-    959
+    772,
+    4708
    ],
-   "src": "v2"
+   "legal": true,
+   "cand_ref": {
+    "key": "c2_024",
+    "idx": 1,
+    "shift_px": 0.0,
+    "n_cand": 4
+   }
   },
-  "alarm": "v2_window_not_legal",
-  "H": 720,
-  "static": true,
-  "dirn": "static",
+  "H": 432,
+  "static": false,
+  "dirn": "down",
   "text": "贼首领开口：「喂，大个子。」"
  },
  {
@@ -947,27 +1029,30 @@
   "dur": 1.57,
   "img": "c2_029.jpg",
   "block": 25,
-  "s": 2.2,
-  "x0": 259.7,
-  "top_start": 1757.0,
-  "top_end": 1720.0,
-  "src": "v2",
+  "s": 2.6,
+  "x0": 332.7,
+  "top_start": 1736.0,
+  "top_end": 1791.4,
+  "src": "candidate",
   "v2": {
-   "white_area": 0.0008,
-   "face_ratio": 0.234,
-   "legal": false,
+   "src": "candidate",
+   "mode": "face",
+   "score": 0.993,
    "band": [
-    1670,
-    4831,
-    0,
-    1799
+    1476,
+    4824
    ],
-   "src": "v2"
+   "legal": true,
+   "cand_ref": {
+    "key": "c2_029",
+    "idx": 0,
+    "shift_px": 0.0,
+    "n_cand": 5
+   }
   },
-  "alarm": "v2_window_not_legal",
-  "H": 491,
+  "H": 415,
   "static": false,
-  "dirn": "up",
+  "dirn": "down",
   "text": "拉昂问：「那有问题吗？」"
  },
  {
@@ -977,24 +1062,28 @@
   "dur": 1.83,
   "img": "c2_030.jpg",
   "block": 26,
-  "s": 1.26562,
-  "x0": 662.2,
-  "top_start": 3923.2,
-  "top_end": 4037.0,
-  "src": "v2",
+  "s": 1.1812,
+  "x0": 581.0,
+  "top_start": 2140.0,
+  "top_end": 2261.9,
+  "src": "candidate",
   "v2": {
-   "white_area": 0.0,
-   "face_ratio": 0.45,
-   "legal": true,
+   "src": "candidate",
+   "mode": "face",
+   "score": 1.0,
    "band": [
-    1802,
-    7186,
-    0,
-    1799
+    1800,
+    7204
    ],
-   "src": "v2"
+   "legal": true,
+   "cand_ref": {
+    "key": "c2_030",
+    "idx": 0,
+    "shift_px": 0.0,
+    "n_cand": 5
+   }
   },
-  "H": 853,
+  "H": 914,
   "static": false,
   "dirn": "down",
   "text": "盗贼骂了句「你这个小混蛋」，"
@@ -1006,26 +1095,30 @@
   "dur": 1.83,
   "img": "c2_030.jpg",
   "block": 26,
-  "s": 1.26562,
-  "x0": 662.2,
-  "top_start": 4037.0,
-  "top_end": 3923.2,
-  "src": "v2",
+  "s": 1.1812,
+  "x0": 581.0,
+  "top_start": 4080.0,
+  "top_end": 4201.9,
+  "src": "candidate",
   "v2": {
-   "white_area": 0.0,
-   "face_ratio": 0.45,
-   "legal": true,
+   "src": "candidate",
+   "mode": "face",
+   "score": 1.0,
    "band": [
-    1802,
-    7186,
-    0,
-    1799
+    1800,
+    7204
    ],
-   "src": "v2"
+   "legal": true,
+   "cand_ref": {
+    "key": "c2_030",
+    "idx": 1,
+    "shift_px": 0.0,
+    "n_cand": 5
+   }
   },
-  "H": 853,
+  "H": 914,
   "static": false,
-  "dirn": "up",
+  "dirn": "down",
   "text": "头目跟着下令：「上，兄弟们。」"
  },
  {
@@ -1035,24 +1128,28 @@
   "dur": 2.585,
   "img": "c2_035.jpg",
   "block": 27,
-  "s": 0.8,
-  "x0": 0.0,
-  "top_start": 1251.5,
-  "top_end": 1431.5,
-  "src": "v2",
+  "s": 0.9,
+  "x0": 107.1,
+  "top_start": 1588.0,
+  "top_end": 1748.0,
+  "src": "candidate",
   "v2": {
-   "white_area": 0.0,
-   "face_ratio": null,
-   "legal": true,
+   "src": "candidate",
+   "mode": "search",
+   "score": 1.158,
    "band": [
-    807,
-    3225,
-    0,
-    1799
+    1648,
+    2512
    ],
-   "src": "v2"
+   "legal": true,
+   "cand_ref": {
+    "key": "c2_035",
+    "idx": 0,
+    "shift_px": 0.0,
+    "n_cand": 2
+   }
   },
-  "H": 1350,
+  "H": 1200,
   "static": false,
   "dirn": "down",
   "text": "下一秒，拉昂瞳孔转金——冲在最前的巨"
@@ -1064,26 +1161,30 @@
   "dur": 2.585,
   "img": "c2_035.jpg",
   "block": 27,
-  "s": 0.8,
-  "x0": 0.0,
-  "top_start": 1431.5,
-  "top_end": 1251.5,
-  "src": "v2",
+  "s": 2.5,
+  "x0": 612.0,
+  "top_start": 1560.0,
+  "top_end": 1617.6,
+  "src": "candidate",
   "v2": {
-   "white_area": 0.0,
-   "face_ratio": null,
-   "legal": true,
+   "src": "candidate",
+   "mode": "search",
+   "score": 0.404,
    "band": [
-    807,
-    3225,
-    0,
-    1799
+    804,
+    988
    ],
-   "src": "v2"
+   "legal": true,
+   "cand_ref": {
+    "key": "c2_035",
+    "idx": 1,
+    "shift_px": 0.0,
+    "n_cand": 2
+   }
   },
-  "H": 1350,
+  "H": 432,
   "static": false,
-  "dirn": "up",
+  "dirn": "down",
   "text": "汉先飞了出去，整伙盗贼转眼被掀翻一地。"
  },
  {
@@ -1095,20 +1196,24 @@
   "block": 28,
   "s": 0.8,
   "x0": 0.0,
-  "top_start": 1275.0,
-  "top_end": 1455.0,
-  "src": "v2",
+  "top_start": 1272.0,
+  "top_end": 1452.0,
+  "src": "candidate",
   "v2": {
-   "white_area": 0.0002,
-   "face_ratio": 0.546,
-   "legal": true,
+   "src": "candidate",
+   "mode": "face",
+   "score": 1.5,
    "band": [
-    0,
-    5231,
-    0,
-    1799
+    612,
+    5040
    ],
-   "src": "v2"
+   "legal": true,
+   "cand_ref": {
+    "key": "c2_051",
+    "idx": 0,
+    "shift_px": 0.0,
+    "n_cand": 4
+   }
   },
   "H": 1350,
   "static": false,
@@ -1122,26 +1227,30 @@
   "dur": 2.655,
   "img": "c2_053.jpg",
   "block": 29,
-  "s": 1.51875,
+  "s": 1.1,
   "x0": 0.0,
-  "top_start": 1646.9,
-  "top_end": 1552.1,
-  "src": "v2",
+  "top_start": 1310.0,
+  "top_end": 1440.9,
+  "src": "candidate",
   "v2": {
-   "white_area": 0.0024,
-   "face_ratio": 0.45,
-   "legal": true,
+   "src": "candidate",
+   "mode": "search",
+   "score": 1.5,
    "band": [
-    1249,
-    2660,
-    0,
-    1799
+    1056,
+    2900
    ],
-   "src": "v2"
+   "legal": true,
+   "cand_ref": {
+    "key": "c2_053",
+    "idx": 0,
+    "shift_px": 0.0,
+    "n_cand": 3
+   }
   },
-  "H": 711,
+  "H": 982,
   "static": false,
-  "dirn": "up",
+  "dirn": "down",
   "text": "刚才还抢别人的，转眼被抢了个干净。钱袋堆"
  },
  {
@@ -1151,24 +1260,28 @@
   "dur": 2.655,
   "img": "c2_053.jpg",
   "block": 29,
-  "s": 1.51875,
+  "s": 2.5,
   "x0": 0.0,
-  "top_start": 1552.1,
-  "top_end": 1646.9,
-  "src": "v2",
+  "top_start": 1946.0,
+  "top_end": 2003.6,
+  "src": "candidate",
   "v2": {
-   "white_area": 0.0024,
-   "face_ratio": 0.45,
-   "legal": true,
+   "src": "candidate",
+   "mode": "search",
+   "score": 1.0,
    "band": [
-    1249,
-    2660,
-    0,
-    1799
+    1056,
+    2900
    ],
-   "src": "v2"
+   "legal": true,
+   "cand_ref": {
+    "key": "c2_053",
+    "idx": 1,
+    "shift_px": 0.0,
+    "n_cand": 3
+   }
   },
-  "H": 711,
+  "H": 432,
   "static": false,
   "dirn": "down",
   "text": "了一地，盗贼结巴着：「就……就这些了。」"
@@ -1180,26 +1293,30 @@
   "dur": 2.07,
   "img": "c2_054.jpg",
   "block": 30,
-  "s": 1.72954,
-  "x0": 469.2,
-  "top_start": 1856.0,
-  "top_end": 1772.7,
-  "src": "v2",
+  "s": 1.9,
+  "x0": 889.6,
+  "top_start": 2608.0,
+  "top_end": 2683.8,
+  "src": "candidate",
   "v2": {
-   "white_area": 0.0021,
-   "face_ratio": 0.45,
-   "legal": true,
+   "src": "candidate",
+   "mode": "search",
+   "score": 1.0,
    "band": [
-    1644,
-    4387,
-    0,
-    1799
+    1828,
+    4764
    ],
-   "src": "v2"
+   "legal": true,
+   "cand_ref": {
+    "key": "c2_054",
+    "idx": 0,
+    "shift_px": 0.0,
+    "n_cand": 5
+   }
   },
-  "H": 624,
+  "H": 568,
   "static": false,
-  "dirn": "up",
+  "dirn": "down",
   "text": "拉昂皱眉：「你们怎么就这么点金子？」"
  },
  {
@@ -1209,24 +1326,28 @@
   "dur": 2.55,
   "img": "c2_054.jpg",
   "block": 31,
-  "s": 1.72954,
-  "x0": 469.2,
-  "top_start": 1772.7,
-  "top_end": 1856.0,
-  "src": "v2",
+  "s": 1.9,
+  "x0": 889.6,
+  "top_start": 3208.0,
+  "top_end": 3283.8,
+  "src": "candidate",
   "v2": {
-   "white_area": 0.0021,
-   "face_ratio": 0.45,
-   "legal": true,
+   "src": "candidate",
+   "mode": "search",
+   "score": 1.0,
    "band": [
-    1644,
-    4387,
-    0,
-    1799
+    1828,
+    4764
    ],
-   "src": "v2"
+   "legal": true,
+   "cand_ref": {
+    "key": "c2_054",
+    "idx": 1,
+    "shift_px": 0.0,
+    "n_cand": 5
+   }
   },
-  "H": 624,
+  "H": 568,
   "static": false,
   "dirn": "down",
   "text": "盗贼小声解释：「如今很少有人坐马车出行了……」"
@@ -1238,26 +1359,30 @@
   "dur": 2.51,
   "img": "c2_055.jpg",
   "block": 32,
-  "s": 0.8,
-  "x0": 0.0,
-  "top_start": 1860.0,
-  "top_end": 1680.0,
-  "src": "v2",
+  "s": 1.3,
+  "x0": 692.3,
+  "top_start": 1368.0,
+  "top_end": 1478.8,
+  "src": "candidate",
   "v2": {
-   "white_area": 0.0073,
-   "face_ratio": null,
-   "legal": true,
+   "src": "candidate",
+   "mode": "search",
+   "score": 1.0,
    "band": [
-    1410,
-    3479,
-    0,
-    1799
+    1308,
+    3600
    ],
-   "src": "v2"
+   "legal": true,
+   "cand_ref": {
+    "key": "c2_055",
+    "idx": 0,
+    "shift_px": 0.0,
+    "n_cand": 4
+   }
   },
-  "H": 1350,
+  "H": 831,
   "static": false,
-  "dirn": "up",
+  "dirn": "down",
   "text": "他还想找借口，但钱袋已经砸在了他脸上。"
  },
  {
@@ -1267,24 +1392,28 @@
   "dur": 2.405,
   "img": "c2_055.jpg",
   "block": 33,
-  "s": 0.8,
+  "s": 2.5,
   "x0": 0.0,
-  "top_start": 1680.0,
-  "top_end": 1860.0,
-  "src": "v2",
+  "top_start": 3048.0,
+  "top_end": 3105.6,
+  "src": "candidate",
   "v2": {
-   "white_area": 0.0073,
-   "face_ratio": null,
-   "legal": true,
+   "src": "candidate",
+   "mode": "search",
+   "score": 1.0,
    "band": [
-    1410,
-    3479,
-    0,
-    1799
+    1308,
+    3600
    ],
-   "src": "v2"
+   "legal": true,
+   "cand_ref": {
+    "key": "c2_055",
+    "idx": 1,
+    "shift_px": 0.0,
+    "n_cand": 4
+   }
   },
-  "H": 1350,
+  "H": 432,
   "static": false,
   "dirn": "down",
   "text": "拉昂说：「你要去抢别人，就该想到"
@@ -1296,26 +1425,30 @@
   "dur": 2.405,
   "img": "c2_055.jpg",
   "block": 33,
-  "s": 0.8,
+  "s": 1.3,
   "x0": 0.0,
-  "top_start": 1860.0,
-  "top_end": 1680.0,
-  "src": "v2",
+  "top_start": 2208.0,
+  "top_end": 2318.8,
+  "src": "candidate",
   "v2": {
-   "white_area": 0.0073,
-   "face_ratio": null,
-   "legal": true,
+   "src": "candidate",
+   "mode": "search",
+   "score": 1.0,
    "band": [
-    1410,
-    3479,
-    0,
-    1799
+    1308,
+    3600
    ],
-   "src": "v2"
+   "legal": true,
+   "cand_ref": {
+    "key": "c2_055",
+    "idx": 2,
+    "shift_px": 0.0,
+    "n_cand": 4
+   }
   },
-  "H": 1350,
+  "H": 831,
   "static": false,
-  "dirn": "up",
+  "dirn": "down",
   "text": "别人也可能来抢你。你弱得要命。」"
  },
  {
@@ -1325,24 +1458,28 @@
   "dur": 1.995,
   "img": "c2_056.jpg",
   "block": 34,
-  "s": 1.84791,
-  "x0": 388.9,
-  "top_start": 2045.1,
-  "top_end": 2123.0,
-  "src": "v2",
+  "s": 1.0723,
+  "x0": 387.1,
+  "top_start": 1416.0,
+  "top_end": 1550.3,
+  "src": "candidate",
   "v2": {
-   "white_area": 0.0,
-   "face_ratio": 0.45,
-   "legal": true,
+   "src": "candidate",
+   "mode": "face",
+   "score": 1.5,
    "band": [
-    1417,
-    4493,
-    0,
-    1240
+    1116,
+    4528
    ],
-   "src": "v2"
+   "legal": true,
+   "cand_ref": {
+    "key": "c2_056",
+    "idx": 0,
+    "shift_px": 0.0,
+    "n_cand": 4
+   }
   },
-  "H": 584,
+  "H": 1007,
   "static": false,
   "dirn": "down",
   "text": "那盗贼问：「难、难道你也是盗"
@@ -1354,26 +1491,30 @@
   "dur": 1.995,
   "img": "c2_056.jpg",
   "block": 34,
-  "s": 1.84791,
-  "x0": 388.9,
-  "top_start": 2123.0,
-  "top_end": 2045.1,
-  "src": "v2",
+  "s": 1.3,
+  "x0": 504.7,
+  "top_start": 2156.0,
+  "top_end": 2266.8,
+  "src": "candidate",
   "v2": {
-   "white_area": 0.0,
-   "face_ratio": 0.45,
-   "legal": true,
+   "src": "candidate",
+   "mode": "search",
+   "score": 1.0,
    "band": [
-    1417,
-    4493,
-    0,
-    1240
+    1116,
+    4528
    ],
-   "src": "v2"
+   "legal": true,
+   "cand_ref": {
+    "key": "c2_056",
+    "idx": 1,
+    "shift_px": 0.0,
+    "n_cand": 4
+   }
   },
-  "H": 584,
+  "H": 831,
   "static": false,
-  "dirn": "up",
+  "dirn": "down",
   "text": "贼？」拉昂说：「我是勇者。」"
  },
  {
@@ -1401,25 +1542,28 @@
   "dur": 2.485,
   "img": "c2_058.jpg",
   "block": 36,
-  "s": 1.89474,
-  "x0": 519.5,
-  "top_start": 3194.0,
-  "top_end": 3270.0,
-  "src": "v2",
+  "s": 2.6,
+  "x0": 152.4,
+  "top_start": 1640.0,
+  "top_end": 1695.4,
+  "src": "candidate",
   "v2": {
-   "white_area": 0.0359,
-   "face_ratio": null,
-   "legal": false,
+   "src": "candidate",
+   "mode": "face",
+   "score": 1.0,
    "band": [
-    3194,
-    3839,
-    0,
-    1799
+    1460,
+    4096
    ],
-   "src": "v2"
+   "legal": true,
+   "cand_ref": {
+    "key": "c2_058",
+    "idx": 0,
+    "shift_px": 0.0,
+    "n_cand": 5
+   }
   },
-  "alarm": "v2_window_not_legal",
-  "H": 570,
+  "H": 415,
   "static": false,
   "dirn": "down",
   "text": "按他的估算，一枚金币大约值一韩元；"
@@ -1431,27 +1575,30 @@
   "dur": 2.485,
   "img": "c2_058.jpg",
   "block": 36,
-  "s": 1.89474,
-  "x0": 519.5,
-  "top_start": 3270.0,
-  "top_end": 3194.0,
-  "src": "v2",
+  "s": 2.6,
+  "x0": 152.4,
+  "top_start": 2120.0,
+  "top_end": 2175.4,
+  "src": "candidate",
   "v2": {
-   "white_area": 0.0359,
-   "face_ratio": null,
-   "legal": false,
+   "src": "candidate",
+   "mode": "face",
+   "score": 1.0,
    "band": [
-    3194,
-    3839,
-    0,
-    1799
+    1460,
+    4096
    ],
-   "src": "v2"
+   "legal": true,
+   "cand_ref": {
+    "key": "c2_058",
+    "idx": 1,
+    "shift_px": 0.0,
+    "n_cand": 5
+   }
   },
-  "alarm": "v2_window_not_legal",
-  "H": 570,
+  "H": 415,
   "static": false,
-  "dirn": "up",
+  "dirn": "down",
   "text": "这一票到手三百五十万，够付几天住宿。"
  },
  {
@@ -1461,25 +1608,28 @@
   "dur": 2.42,
   "img": "c2_058.jpg",
   "block": 37,
-  "s": 1.89474,
-  "x0": 519.5,
-  "top_start": 3194.0,
-  "top_end": 3270.0,
-  "src": "v2",
+  "s": 2.2,
+  "x0": 102.1,
+  "top_start": 2840.0,
+  "top_end": 2905.5,
+  "src": "candidate",
   "v2": {
-   "white_area": 0.0359,
-   "face_ratio": null,
-   "legal": false,
+   "src": "candidate",
+   "mode": "search",
+   "score": 1.5,
    "band": [
-    3194,
-    3839,
-    0,
-    1799
+    1460,
+    4096
    ],
-   "src": "v2"
+   "legal": true,
+   "cand_ref": {
+    "key": "c2_058",
+    "idx": 2,
+    "shift_px": 0.0,
+    "n_cand": 5
+   }
   },
-  "alarm": "v2_window_not_legal",
-  "H": 570,
+  "H": 491,
   "static": false,
   "dirn": "down",
   "text": "真正有用的，只有那两把长剑。"
@@ -1511,25 +1661,28 @@
   "block": 39,
   "s": 0.8,
   "x0": 0.0,
-  "top_start": 3121.4,
-  "top_end": 2941.4,
-  "src": "v2",
+  "top_start": 2940.0,
+  "top_end": 3120.0,
+  "src": "candidate",
   "v2": {
-   "white_area": 0.0146,
-   "face_ratio": 0.703,
-   "legal": false,
+   "src": "candidate",
+   "mode": "face",
+   "score": 1.092,
    "band": [
-    2643,
-    5717,
-    0,
-    1799
+    2640,
+    5356
    ],
-   "src": "v2"
+   "legal": true,
+   "cand_ref": {
+    "key": "c2_060",
+    "idx": 0,
+    "shift_px": 0.0,
+    "n_cand": 2
+   }
   },
-  "alarm": "v2_window_not_legal",
   "H": 1350,
   "static": false,
-  "dirn": "up",
+  "dirn": "down",
   "text": "盗贼们点头哈腰：「是，大人。您保重，"
  },
  {
@@ -1539,25 +1692,28 @@
   "dur": 3.1,
   "img": "c2_060.jpg",
   "block": 39,
-  "s": 0.8,
-  "x0": 0.0,
-  "top_start": 2941.4,
-  "top_end": 3121.4,
-  "src": "v2",
+  "s": 1.1,
+  "x0": 290.7,
+  "top_start": 3690.0,
+  "top_end": 3820.9,
+  "src": "candidate",
   "v2": {
-   "white_area": 0.0146,
-   "face_ratio": 0.703,
-   "legal": false,
+   "src": "candidate",
+   "mode": "search",
+   "score": 0.838,
    "band": [
-    2643,
-    5717,
-    0,
-    1799
+    2640,
+    5356
    ],
-   "src": "v2"
+   "legal": true,
+   "cand_ref": {
+    "key": "c2_060",
+    "idx": 1,
+    "shift_px": 0.0,
+    "n_cand": 2
+   }
   },
-  "alarm": "v2_window_not_legal",
-  "H": 1350,
+  "H": 982,
   "static": false,
   "dirn": "down",
   "text": "老大。」——老大？那盗贼立刻改了口。"
@@ -1569,27 +1725,30 @@
   "dur": 2.86,
   "img": "c2_061.jpg",
   "block": 40,
-  "s": 2.2,
-  "x0": 640.2,
-  "top_start": 2494.0,
-  "top_end": 2428.5,
-  "src": "v2",
+  "s": 2.6,
+  "x0": 913.1,
+  "top_start": 2450.0,
+  "top_end": 2505.4,
+  "src": "candidate",
   "v2": {
-   "white_area": 0.0001,
-   "face_ratio": 0.249,
-   "legal": false,
+   "src": "candidate",
+   "mode": "face",
+   "score": 1.0,
    "band": [
-    1328,
-    4295,
-    1281,
-    1799
+    1560,
+    4308
    ],
-   "src": "v2"
+   "legal": true,
+   "cand_ref": {
+    "key": "c2_061",
+    "idx": 0,
+    "shift_px": 0.0,
+    "n_cand": 4
+   }
   },
-  "alarm": "v2_window_not_legal",
-  "H": 491,
+  "H": 415,
   "static": false,
-  "dirn": "up",
+  "dirn": "down",
   "text": "至于为什么不杀他们：他的规矩是别人怎么对"
  },
  {
@@ -1599,25 +1758,28 @@
   "dur": 2.86,
   "img": "c2_061.jpg",
   "block": 40,
-  "s": 2.2,
-  "x0": 640.2,
-  "top_start": 2428.5,
-  "top_end": 2494.0,
-  "src": "v2",
+  "s": 2.6,
+  "x0": 913.1,
+  "top_start": 2480.0,
+  "top_end": 2535.4,
+  "src": "candidate",
   "v2": {
-   "white_area": 0.0001,
-   "face_ratio": 0.249,
-   "legal": false,
+   "src": "candidate",
+   "mode": "face",
+   "score": 1.0,
    "band": [
-    1328,
-    4295,
-    1281,
-    1799
+    1560,
+    4308
    ],
-   "src": "v2"
+   "legal": true,
+   "cand_ref": {
+    "key": "c2_061",
+    "idx": 1,
+    "shift_px": 0.0,
+    "n_cand": 4
+   }
   },
-  "alarm": "v2_window_not_legal",
-  "H": 491,
+  "H": 415,
   "static": false,
   "dirn": "down",
   "text": "他，他就怎么还回去，但能不动手就不动手。"
@@ -1680,27 +1842,30 @@
   "dur": 1.965,
   "img": "c2_063.jpg",
   "block": 43,
-  "s": 2.2,
-  "x0": 496.7,
-  "top_start": 1686.0,
-  "top_end": 1686.0,
-  "src": "v2",
+  "s": 2.1808,
+  "x0": 512.8,
+  "top_start": 1552.0,
+  "top_end": 1618.0,
+  "src": "candidate",
   "v2": {
-   "white_area": 0.0002,
-   "face_ratio": 0.422,
-   "legal": false,
+   "src": "candidate",
+   "mode": "face",
+   "score": 1.5,
    "band": [
-    2469,
-    3582,
-    0,
-    1799
+    1132,
+    3708
    ],
-   "src": "v2"
+   "legal": true,
+   "cand_ref": {
+    "key": "c2_063",
+    "idx": 0,
+    "shift_px": 0.0,
+    "n_cand": 5
+   }
   },
-  "alarm": "v2_window_not_legal",
-  "H": 491,
-  "static": true,
-  "dirn": "static",
+  "H": 495,
+  "static": false,
+  "dirn": "down",
   "text": "拉昂越想越亏：「她要是给我魔力"
  },
  {
@@ -1710,27 +1875,30 @@
   "dur": 1.965,
   "img": "c2_063.jpg",
   "block": 43,
-  "s": 2.2,
-  "x0": 496.7,
-  "top_start": 1686.0,
-  "top_end": 1686.0,
-  "src": "v2",
+  "s": 2.1808,
+  "x0": 512.8,
+  "top_start": 1812.0,
+  "top_end": 1878.0,
+  "src": "candidate",
   "v2": {
-   "white_area": 0.0002,
-   "face_ratio": 0.422,
-   "legal": false,
+   "src": "candidate",
+   "mode": "face",
+   "score": 1.0,
    "band": [
-    2469,
-    3582,
-    0,
-    1799
+    1132,
+    3708
    ],
-   "src": "v2"
+   "legal": true,
+   "cand_ref": {
+    "key": "c2_063",
+    "idx": 1,
+    "shift_px": 0.0,
+    "n_cand": 5
+   }
   },
-  "alarm": "v2_window_not_legal",
-  "H": 491,
-  "static": true,
-  "dirn": "static",
+  "H": 495,
+  "static": false,
+  "dirn": "down",
   "text": "感知或剑术天赋，我都能轻松点。」"
  },
  {
@@ -1760,24 +1928,28 @@
   "block": 45,
   "s": 0.8,
   "x0": 0.0,
-  "top_start": 4016.0,
-  "top_end": 3836.0,
-  "src": "v2",
+  "top_start": 4280.0,
+  "top_end": 4460.0,
+  "src": "candidate",
   "v2": {
-   "white_area": 0.0021,
-   "face_ratio": null,
-   "legal": true,
+   "src": "candidate",
+   "mode": "face",
+   "score": 1.492,
    "band": [
-    552,
-    8649,
-    0,
-    1799
+    3620,
+    8824
    ],
-   "src": "v2"
+   "legal": true,
+   "cand_ref": {
+    "key": "c2_066",
+    "idx": 0,
+    "shift_px": 0.0,
+    "n_cand": 8
+   }
   },
   "H": 1350,
   "static": false,
-  "dirn": "up",
+  "dirn": "down",
   "text": "夜色落下来，拉昂在林子里生起篝火：「神力"
  },
  {
@@ -1789,20 +1961,24 @@
   "block": 45,
   "s": 0.8,
   "x0": 0.0,
-  "top_start": 3836.0,
-  "top_end": 4016.0,
-  "src": "v2",
+  "top_start": 5720.0,
+  "top_end": 5900.0,
+  "src": "candidate",
   "v2": {
-   "white_area": 0.0021,
-   "face_ratio": null,
-   "legal": true,
+   "src": "candidate",
+   "mode": "face",
+   "score": 1.0,
    "band": [
-    552,
-    8649,
-    0,
-    1799
+    3620,
+    8824
    ],
-   "src": "v2"
+   "legal": true,
+   "cand_ref": {
+    "key": "c2_066",
+    "idx": 1,
+    "shift_px": 0.0,
+    "n_cand": 8
+   }
   },
   "H": 1350,
   "static": false,
@@ -1816,26 +1992,30 @@
   "dur": 2.535,
   "img": "c2_067.jpg",
   "block": 46,
-  "s": 1.01674,
-  "x0": 383.7,
-  "top_start": 1994.0,
-  "top_end": 1852.4,
-  "src": "v2",
+  "s": 1.1,
+  "x0": 490.9,
+  "top_start": 1852.0,
+  "top_end": 1982.9,
+  "src": "candidate",
   "v2": {
-   "white_area": 0.0027,
-   "face_ratio": 0.45,
-   "legal": true,
+   "src": "candidate",
+   "mode": "search",
+   "score": 1.284,
    "band": [
-    0,
-    5181,
-    0,
-    1799
+    1952,
+    5364
    ],
-   "src": "v2"
+   "legal": true,
+   "cand_ref": {
+    "key": "c2_067",
+    "idx": 0,
+    "shift_px": 0.0,
+    "n_cand": 5
+   }
   },
-  "H": 1062,
+  "H": 982,
   "static": false,
-  "dirn": "up",
+  "dirn": "down",
   "text": "「那么，接下来该去哪儿呢？第一个世界"
  },
  {
@@ -1845,24 +2025,28 @@
   "dur": 2.535,
   "img": "c2_067.jpg",
   "block": 46,
-  "s": 1.01674,
-  "x0": 383.7,
-  "top_start": 1852.4,
-  "top_end": 1994.0,
-  "src": "v2",
+  "s": 1.1,
+  "x0": 490.9,
+  "top_start": 2060.0,
+  "top_end": 2190.9,
+  "src": "candidate",
   "v2": {
-   "white_area": 0.0027,
-   "face_ratio": 0.45,
-   "legal": true,
+   "src": "candidate",
+   "mode": "search",
+   "score": 1.0,
    "band": [
-    0,
-    5181,
-    0,
-    1799
+    1952,
+    5364
    ],
-   "src": "v2"
+   "legal": true,
+   "cand_ref": {
+    "key": "c2_067",
+    "idx": 1,
+    "shift_px": 0.0,
+    "n_cand": 5
+   }
   },
-  "H": 1062,
+  "H": 982,
   "static": false,
   "dirn": "down",
   "text": "从召唤阵开局，这次却落在了森林里。」"
@@ -1874,26 +2058,30 @@
   "dur": 2.645,
   "img": "c2_069.jpg",
   "block": 47,
-  "s": 0.8,
+  "s": 0.9,
   "x0": 0.0,
-  "top_start": 3024.0,
-  "top_end": 2844.0,
-  "src": "v2",
+  "top_start": 2132.0,
+  "top_end": 2292.0,
+  "src": "candidate",
   "v2": {
-   "white_area": 0.0171,
-   "face_ratio": null,
-   "legal": true,
+   "src": "candidate",
+   "mode": "search",
+   "score": 1.0,
    "band": [
-    2702,
-    4515,
-    0,
-    1799
+    1472,
+    4688
    ],
-   "src": "v2"
+   "legal": true,
+   "cand_ref": {
+    "key": "c2_069",
+    "idx": 0,
+    "shift_px": 0.0,
+    "n_cand": 4
+   }
   },
-  "H": 1350,
+  "H": 1200,
   "static": false,
-  "dirn": "up",
+  "dirn": "down",
   "text": "那帮盗贼说过，这里是帝国的边境；据说魔导工"
  },
  {
@@ -1903,24 +2091,28 @@
   "dur": 2.645,
   "img": "c2_069.jpg",
   "block": 47,
-  "s": 0.8,
-  "x0": 0.0,
-  "top_start": 2844.0,
-  "top_end": 3024.0,
-  "src": "v2",
+  "s": 2.2,
+  "x0": 1145.5,
+  "top_start": 1600.0,
+  "top_end": 1665.5,
+  "src": "candidate",
   "v2": {
-   "white_area": 0.0171,
-   "face_ratio": null,
-   "legal": true,
+   "src": "candidate",
+   "mode": "search",
+   "score": 1.0,
    "band": [
-    2702,
-    4515,
-    0,
-    1799
+    1472,
+    4688
    ],
-   "src": "v2"
+   "legal": true,
+   "cand_ref": {
+    "key": "c2_069",
+    "idx": 1,
+    "shift_px": 0.0,
+    "n_cand": 4
+   }
   },
-  "H": 1350,
+  "H": 491,
   "static": false,
   "dirn": "down",
   "text": "程发达，火车都通了——至少他们是这么说的。"
@@ -1932,27 +2124,30 @@
   "dur": 3.33,
   "img": "c2_070.jpg",
   "block": 48,
-  "s": 2.2,
-  "x0": 849.2,
-  "top_start": 3672.0,
-  "top_end": 3649.1,
-  "src": "v2",
+  "s": 1.0035,
+  "x0": 179.0,
+  "top_start": 2630.0,
+  "top_end": 2773.5,
+  "src": "candidate",
   "v2": {
-   "white_area": 0.0331,
-   "face_ratio": 0.921,
-   "legal": false,
+   "src": "candidate",
+   "mode": "face",
+   "score": 1.0,
    "band": [
-    446,
-    7413,
-    1158,
-    1799
+    712,
+    6916
    ],
-   "src": "v2"
+   "legal": true,
+   "cand_ref": {
+    "key": "c2_070",
+    "idx": 0,
+    "shift_px": 0.0,
+    "n_cand": 5
+   }
   },
-  "alarm": "v2_window_not_legal",
-  "H": 491,
+  "H": 1076,
   "static": false,
-  "dirn": "up",
+  "dirn": "down",
   "text": "他以前骑马赶路老被盗贼抢，起码这点让人安心。"
  },
  {
@@ -1962,25 +2157,28 @@
   "dur": 2.265,
   "img": "c2_071.jpg",
   "block": 49,
-  "s": 0.8,
+  "s": 1.1,
   "x0": 0.0,
-  "top_start": 4416.0,
-  "top_end": 4596.0,
-  "src": "v2",
+  "top_start": 4952.0,
+  "top_end": 5082.9,
+  "src": "candidate",
   "v2": {
-   "white_area": 0.0014,
-   "face_ratio": null,
-   "legal": false,
+   "src": "candidate",
+   "mode": "search",
+   "score": 0.933,
    "band": [
-    1,
-    8160,
-    0,
-    1799
+    4892,
+    6480
    ],
-   "src": "v2"
+   "legal": true,
+   "cand_ref": {
+    "key": "c2_071",
+    "idx": 0,
+    "shift_px": 0.0,
+    "n_cand": 6
+   }
   },
-  "alarm": "v2_window_not_legal",
-  "H": 1350,
+  "H": 982,
   "static": false,
   "dirn": "down",
   "text": "至于那帮队友，没有他应该也过得不错—"
@@ -1992,27 +2190,30 @@
   "dur": 2.265,
   "img": "c2_071.jpg",
   "block": 49,
-  "s": 0.8,
+  "s": 0.9,
   "x0": 0.0,
-  "top_start": 4596.0,
-  "top_end": 4416.0,
-  "src": "v2",
+  "top_start": 260.0,
+  "top_end": 420.0,
+  "src": "candidate",
   "v2": {
-   "white_area": 0.0014,
-   "face_ratio": null,
-   "legal": false,
+   "src": "candidate",
+   "mode": "search",
+   "score": 1.38,
    "band": [
-    1,
-    8160,
-    0,
-    1799
+    256,
+    1372
    ],
-   "src": "v2"
+   "legal": true,
+   "cand_ref": {
+    "key": "c2_071",
+    "idx": 1,
+    "shift_px": 0.0,
+    "n_cand": 6
+   }
   },
-  "alarm": "v2_window_not_legal",
-  "H": 1350,
+  "H": 1200,
   "static": false,
-  "dirn": "up",
+  "dirn": "down",
   "text": "—走到哪儿都挺丢人，但各自都还顶得住。"
  },
  {
@@ -2022,25 +2223,28 @@
   "dur": 3.28,
   "img": "c2_072.jpg",
   "block": 50,
-  "s": 1.37374,
-  "x0": 375.4,
-  "top_start": 3051.0,
-  "top_end": 3155.8,
-  "src": "v2",
+  "s": 1.6,
+  "x0": 900.0,
+  "top_start": 3928.0,
+  "top_end": 4018.0,
+  "src": "candidate",
   "v2": {
-   "white_area": 0.0473,
-   "face_ratio": null,
-   "legal": false,
+   "src": "candidate",
+   "mode": "search",
+   "score": 1.0,
    "band": [
-    3051,
-    3941,
-    0,
-    1799
+    3028,
+    5560
    ],
-   "src": "v2"
+   "legal": true,
+   "cand_ref": {
+    "key": "c2_072",
+    "idx": 0,
+    "shift_px": 0.0,
+    "n_cand": 6
+   }
   },
-  "alarm": "v2_window_not_legal",
-  "H": 786,
+  "H": 675,
   "static": false,
   "dirn": "down",
   "text": "念头刚起，拉昂金瞳一转，手已经握上剑柄。"
@@ -2052,26 +2256,30 @@
   "dur": 1.94,
   "img": "c2_073.jpg",
   "block": 51,
-  "s": 0.8,
+  "s": 1.1,
   "x0": 0.0,
-  "top_start": 2670.0,
-  "top_end": 2490.0,
-  "src": "v2",
+  "top_start": 3572.0,
+  "top_end": 3702.9,
+  "src": "candidate",
   "v2": {
-   "white_area": 0.0015,
-   "face_ratio": null,
-   "legal": true,
+   "src": "candidate",
+   "mode": "search",
+   "score": 1.472,
    "band": [
-    1956,
-    4553,
-    0,
-    1799
+    2432,
+    4600
    ],
-   "src": "v2"
+   "legal": true,
+   "cand_ref": {
+    "key": "c2_073",
+    "idx": 0,
+    "shift_px": 0.0,
+    "n_cand": 3
+   }
   },
-  "H": 1350,
+  "H": 982,
   "static": false,
-  "dirn": "up",
+  "dirn": "down",
   "text": "背后飘来一句：「晚上好。」"
  },
  {
@@ -2081,24 +2289,28 @@
   "dur": 2.025,
   "img": "c2_075.jpg",
   "block": 52,
-  "s": 1.98621,
-  "x0": 0.0,
-  "top_start": 5959.3,
-  "top_end": 6031.8,
-  "src": "v2",
+  "s": 2.5,
+  "x0": 1224.0,
+  "top_start": 2880.0,
+  "top_end": 2937.6,
+  "src": "candidate",
   "v2": {
-   "white_area": 0.0023,
-   "face_ratio": null,
-   "legal": true,
+   "src": "candidate",
+   "mode": "search",
+   "score": 1.0,
    "band": [
-    2426,
-    10901,
-    0,
-    724
+    2940,
+    9664
    ],
-   "src": "v2"
+   "legal": true,
+   "cand_ref": {
+    "key": "c2_075",
+    "idx": 0,
+    "shift_px": 0.0,
+    "n_cand": 5
+   }
   },
-  "H": 544,
+  "H": 432,
   "static": false,
   "dirn": "down",
   "text": "拉昂回身一剑斩出——那人毫发"
@@ -2110,26 +2322,30 @@
   "dur": 2.025,
   "img": "c2_075.jpg",
   "block": 52,
-  "s": 1.98621,
-  "x0": 0.0,
-  "top_start": 6031.8,
-  "top_end": 5959.3,
-  "src": "v2",
+  "s": 2.5,
+  "x0": 1224.0,
+  "top_start": 3360.0,
+  "top_end": 3417.6,
+  "src": "candidate",
   "v2": {
-   "white_area": 0.0023,
-   "face_ratio": null,
-   "legal": true,
+   "src": "candidate",
+   "mode": "search",
+   "score": 1.0,
    "band": [
-    2426,
-    10901,
-    0,
-    724
+    2940,
+    9664
    ],
-   "src": "v2"
+   "legal": true,
+   "cand_ref": {
+    "key": "c2_075",
+    "idx": 1,
+    "shift_px": 0.0,
+    "n_cand": 5
+   }
   },
-  "H": 544,
+  "H": 432,
   "static": false,
-  "dirn": "up",
+  "dirn": "down",
   "text": "无损，只有几棵大树拦腰断开。"
  },
  {
@@ -2139,24 +2355,28 @@
   "dur": 2.76,
   "img": "c2_078.jpg",
   "block": 53,
-  "s": 2.2,
-  "x0": 1145.5,
-  "top_start": 2289.3,
-  "top_end": 2354.8,
-  "src": "v2",
+  "s": 2.5,
+  "x0": 0.0,
+  "top_start": 1292.0,
+  "top_end": 1349.6,
+  "src": "candidate",
   "v2": {
-   "white_area": 0.0,
-   "face_ratio": null,
-   "legal": true,
+   "src": "candidate",
+   "mode": "search",
+   "score": 0.659,
    "band": [
-    832,
-    4302,
-    1536,
-    1540
+    1352,
+    1496
    ],
-   "src": "v2"
+   "legal": true,
+   "cand_ref": {
+    "key": "c2_078",
+    "idx": 2,
+    "shift_px": 0.0,
+    "n_cand": 4
+   }
   },
-  "H": 491,
+  "H": 432,
   "static": false,
   "dirn": "down",
   "text": "那人这才开口：「哇哦，我只是想谈谈。」"
@@ -2168,27 +2388,30 @@
   "dur": 2.07,
   "img": "c2_079.jpg",
   "block": 54,
-  "s": 1.67053,
-  "x0": 499.5,
-  "top_start": 2523.5,
-  "top_end": 2523.5,
-  "src": "v2",
+  "s": 1.6,
+  "x0": 480.5,
+  "top_start": 3388.0,
+  "top_end": 3478.0,
+  "src": "candidate",
   "v2": {
-   "white_area": 0.0089,
-   "face_ratio": 2.452,
-   "legal": false,
+   "src": "candidate",
+   "mode": "search",
+   "score": 1.0,
    "band": [
-    1279,
-    4183,
-    0,
-    861
+    1288,
+    4184
    ],
-   "src": "v2"
+   "legal": true,
+   "cand_ref": {
+    "key": "c2_079",
+    "idx": 0,
+    "shift_px": 0.0,
+    "n_cand": 5
+   }
   },
-  "alarm": "v2_window_not_legal",
-  "H": 647,
-  "static": true,
-  "dirn": "static",
+  "H": 675,
+  "static": false,
+  "dirn": "down",
   "text": "拉昂问他：「那你为什么带着杀"
  },
  {
@@ -2198,27 +2421,30 @@
   "dur": 2.07,
   "img": "c2_079.jpg",
   "block": 54,
-  "s": 1.67053,
-  "x0": 499.5,
-  "top_start": 2523.5,
-  "top_end": 2523.5,
-  "src": "v2",
+  "s": 1.6,
+  "x0": 480.5,
+  "top_start": 2668.0,
+  "top_end": 2758.0,
+  "src": "candidate",
   "v2": {
-   "white_area": 0.0089,
-   "face_ratio": 2.452,
-   "legal": false,
+   "src": "candidate",
+   "mode": "search",
+   "score": 0.476,
    "band": [
-    1279,
-    4183,
-    0,
-    861
+    1288,
+    4184
    ],
-   "src": "v2"
+   "legal": true,
+   "cand_ref": {
+    "key": "c2_079",
+    "idx": 1,
+    "shift_px": 0.0,
+    "n_cand": 5
+   }
   },
-  "alarm": "v2_window_not_legal",
-  "H": 647,
-  "static": true,
-  "dirn": "static",
+  "H": 675,
+  "static": false,
+  "dirn": "down",
   "text": "意绕到我背后？你他妈是谁？」"
  },
  {
@@ -2228,26 +2454,30 @@
   "dur": 2.13,
   "img": "c2_080.jpg",
   "block": 55,
-  "s": 0.8,
+  "s": 0.9,
   "x0": 0.0,
-  "top_start": 2220.8,
-  "top_end": 2040.8,
-  "src": "v2",
+  "top_start": 1708.0,
+  "top_end": 1868.0,
+  "src": "candidate",
   "v2": {
-   "white_area": 0.0039,
-   "face_ratio": null,
-   "legal": true,
+   "src": "candidate",
+   "mode": "search",
+   "score": 1.0,
    "band": [
-    1649,
-    3938,
-    0,
-    1799
+    1648,
+    3940
    ],
-   "src": "v2"
+   "legal": true,
+   "cand_ref": {
+    "key": "c2_080",
+    "idx": 0,
+    "shift_px": 0.0,
+    "n_cand": 3
+   }
   },
-  "H": 1350,
+  "H": 1200,
   "static": false,
-  "dirn": "up",
+  "dirn": "down",
   "text": "来人咳了一声：「我早该自我介绍了。」"
  },
  {

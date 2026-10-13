@@ -185,40 +185,47 @@ def build_plan0(cfg):
         else:
             up = (phase % 2 == 0)    # 按「非 demo 镜序列」交替，demo 段后重起相位
             phase += 1
-        # §1.2 v6：优先消费 slice_bands.py 產出的候选窗（同切片按 use_cnt 取相邻窗 = 阅读顺序）
-        cw = load_candidates(cfg).get(img) or {}
-        wins = sorted(cw.get("windows", []), key=lambda w: w["top_start"]) if cw else []
+        # §1.2 v6-R1：**只从候选集取窗**（键无扩展名，容错两种写法）；自研裁窗逻辑已删除
+        cand_all = load_candidates(cfg)
+        cw = cand_all.get(img) or cand_all.get(img.rsplit(".", 1)[0]) or {}
+        # 选窗排序：先排除坏候选（纯色块/亮块/白斑>3%），再 face 模式优先，再按阅读顺序 top_start
+        wins = []
+        for w0 in (cw.get("windows", []) if cw else []):
+            try:
+                Hn0 = CANVAS_H / float(w0["s"]); Wn0 = CANVAS_W / float(w0["s"])
+                y0i = max(0, int(round(w0["top_start"]))); x0i = max(0, int(round(w0["x0"])))
+                sub = arr[y0i:y0i + int(Hn0), x0i:x0i + int(Wn0)]
+                bad = (sub.size == 0) or (float(sub.mean()) < 60) or (float(sub.mean()) > 205) \
+                    or (float((sub > 235).mean()) > 0.03)
+            except Exception:
+                bad = False
+            wins.append((1 if bad else 0, 0 if w0.get("mode") == "face" else 1,
+                         -float(w0.get("score", 0) or 0), float(w0.get("top_start", 0)), w0))
+        wins.sort(key=lambda t: (t[0], t[1], t[2], t[3]))
+        wins = [t[4] for t in wins]
         uc = use_cnt.get(fn, 0)
         use_cnt[fn] = uc + 1
         if wins:
-            wsel = dict(wins[min(uc, len(wins) - 1)])
-            if uc >= len(wins):            # 候选不足 → 同窗错窗 ±0.5H
+            idx = min(uc, len(wins) - 1)
+            wsel = dict(wins[idx])
+            shift = 0.0
+            if uc >= len(wins):            # 候选不足 → 同窗错窗 ±0.5H（§1.2d）
                 Hw = CANVAS_H / wsel["s"]
-                d = 0.5 * Hw if uc % 2 == 0 else -0.5 * Hw
-                wsel["top_start"] += d
-                wsel["top_end"] += d
+                shift = 0.5 * Hw if uc % 2 == 0 else -0.5 * Hw
+                wsel["top_start"] += shift
+                wsel["top_end"] += shift
             s = float(wsel["s"]); H = CANVAS_H / s; x0 = float(wsel["x0"])
             ts, te = float(wsel["top_start"]), float(wsel["top_end"])
-            v2meta = dict(src="候选窗", mode=wsel.get("mode"), score=wsel.get("score"),
-                          band=wsel.get("band"), legal=True)
-            if uc >= len(wins):
-                v2meta["reuse_shift"] = True
+            v2meta = dict(src="candidate", mode=wsel.get("mode"), score=wsel.get("score"),
+                          band=wsel.get("band"), legal=True,
+                          cand_ref=dict(key=img if img in cand_all else img.rsplit(".", 1)[0],
+                                        idx=idx, shift_px=round(shift, 1), n_cand=len(wins)))
         else:
-            r2 = v2_pick_window(cfg, img, faces_b0.get(img, []), W2 / 2.0, blk0 + blk_h / 2.0)
-            if r2 is None:
-                s = max(V2["s_min"], CANVAS_W / float(W2)); H = CANVAS_H / s
-                x0 = max(0.0, (W2 - CANVAS_W / s) / 2.0)
-                center = blk0 + max(0.0, blk_h - H) / 2.0
-                ts = te = center
-                v2meta = dict(legal=False, why="no_legal_window", src="v2")
-            else:
-                s = r2["s"]; H = CANVAS_H / s; x0 = r2["x0"]
-                mid = r2["y_mid"]; trav = r2["trav"]
-                ts = mid + trav / 2.0 if up else mid - trav / 2.0
-                te = mid - trav / 2.0 if up else mid + trav / 2.0
-                v2meta = dict(white_area=round(r2["white_area"], 4),
-                              face_ratio=(None if r2["face_ratio"] is None else round(r2["face_ratio"], 3)),
-                              legal=r2["legal"], band=r2["band"], src="v2")
+            # 候选集缺该切片：禁止自研裁窗（R1 硬围栏）→ 取中心窗并报警
+            s = max(V2["s_min"], CANVAS_W / float(W2)); H = CANVAS_H / s
+            x0 = max(0.0, (W2 - CANVAS_W / s) / 2.0)
+            ts = te = blk0 + max(0.0, blk_h - H) / 2.0
+            v2meta = dict(src="candidate-missing", legal=False)
         plan.append(dict(shot=k, t0=round(t0, 3), t1=round(t1, 3), dur=round(t1 - t0, 3),
                          img=img, s=round(s, 5), x0=round(x0, 1),
                          top_start=round(ts, 1), top_end=round(te, 1),
