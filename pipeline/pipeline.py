@@ -497,7 +497,7 @@ def step_qc(cfg, check_only=False):
         slices=slices_of(cfg),
         report_path=os.path.join(w, "qc_report.json"),
         sheet_path=os.path.join(w, "qc_sheet.jpg"),
-        check_only=check_only,
+        check_only=True,   # v6-R1：候选集权威 → QC 只报不改（关闭自动修窗，保住 100% 来源匹配）
         canvas_w=CANVAS_W,
     )
     # v5.1：plan 里 alarm 的镜（三级保脸后仍静止/冲突）强制 choice，进人工裁决回路
